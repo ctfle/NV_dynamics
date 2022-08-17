@@ -1,0 +1,342 @@
+\hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics}{}\doxysection{QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics Class Reference}
+\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics}\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+
+
+Computes (Floquet) dynamics generated from the input sequence of kicks.  
+
+
+Inheritance diagram for QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a87755253b3bb86c0fcb4470e07f49b4c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nv\+\_\+instance, \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a2163c19414a4c4d8e71582f514f6ec2d}{rabi\+\_\+freq}}, kick\+\_\+building\+\_\+blocks, \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_adaa7de49fb573f82e0e6da5ae08726bd}{detuning}}=None, \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af40a5d9f8563813e583701d42a6d9a5b}{AC\+\_\+function}}=None, \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a8c4620acab6411911501c9a3186120ad}{noise}}=None)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_aa25f874965c62520760e6896ebf753d3}{sequence\+\_\+elements}} (self)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a10d89113e281b60c2a23d00ebac08585}{data\+\_\+points}} (self)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_aa3c5c82bf9f9df04aac635e900396656}{save\+\_\+data}} (self, data, file\+\_\+name, save\+\_\+dir, folder, data\+\_\+name, overwrite=False, extra\+\_\+save\+\_\+parameters=None)
+\begin{DoxyCompactList}\small\item\em Method to save data in hdf5 format. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a034d45b621c1201a2f343d1b3b226593}{save\+\_\+data\+\_\+tuple}} (self, data\+\_\+tuple, file\+\_\+name, save\+\_\+dir, folder, sub\+\_\+directories, overwrite=False, extra\+\_\+save\+\_\+parameters=None)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a1e372047c5328ebac1484ad447fd4679}{evolve\+\_\+periodic}} (self, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}{initial\+\_\+state}}, n\+\_\+steps, observable, file\+\_\+name, save\+\_\+every=1000, save\+\_\+dir=\textquotesingle{}./data/\textquotesingle{}, folder=\textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}, extra\+\_\+save\+\_\+parameters=None, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}{seed}}=1)
+\begin{DoxyCompactList}\small\item\em Method for Floquet evolution of a given sequence. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af6034db8284b4ce5eb4313e93387236d}{evolve\+\_\+random}} (self, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}{initial\+\_\+state}}, n\+\_\+steps, observable, file\+\_\+name, save\+\_\+every=1000, save\+\_\+dir=\textquotesingle{}./data/\textquotesingle{}, folder=\textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}, extra\+\_\+save\+\_\+parameters=None, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}{seed}}=1, seed\+\_\+random\+\_\+seq=2)
+\begin{DoxyCompactList}\small\item\em Method for random evolution based on blocks. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a1a4c4e0b796085c10a8c4bbc284e5507}{evolve\+\_\+sequential}} (self, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}{initial\+\_\+state}}, n\+\_\+steps, observable, sequence, file\+\_\+name, save\+\_\+every=1000, save\+\_\+dir=\textquotesingle{}./data/\textquotesingle{}, folder=\textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}, extra\+\_\+save\+\_\+parameters=None, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}{seed}}=1)
+\begin{DoxyCompactList}\small\item\em Method for sequential evolution based on blocks. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a16675fabbaf08a4bcb6b2390cb0b97c8}{evolve\+\_\+time\+\_\+dependent}} (self, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}{initial\+\_\+state}}, n\+\_\+steps, observable, discrete\+\_\+functions, file\+\_\+name, save\+\_\+every=1000, save\+\_\+dir=\textquotesingle{}./data/\textquotesingle{}, folder=\textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}, extra\+\_\+save\+\_\+parameters=None, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}{seed}}=1, seed\+\_\+random\+\_\+seq=2)
+\begin{DoxyCompactList}\small\item\em Method for time dependent evolution based on blocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_adaa7de49fb573f82e0e6da5ae08726bd}{detuning}}
+\begin{DoxyCompactList}\small\item\em Detuning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a2163c19414a4c4d8e71582f514f6ec2d}{rabi\+\_\+freq}}
+\begin{DoxyCompactList}\small\item\em Rabi frequency. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a8c4620acab6411911501c9a3186120ad}{noise}}
+\begin{DoxyCompactList}\small\item\em noise attributed to the drive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af40a5d9f8563813e583701d42a6d9a5b}{AC\+\_\+function}}
+\begin{DoxyCompactList}\small\item\em AC function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a30b7a1b40087d3f565ca7a7a2ce13b01}{building\+\_\+blocks}}
+\begin{DoxyCompactList}\small\item\em building blocks of the seqeunces to be applied \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Computes (Floquet) dynamics generated from the input sequence of kicks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a87755253b3bb86c0fcb4470e07f49b4c}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a87755253b3bb86c0fcb4470e07f49b4c}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nv\+\_\+instance,  }\item[{}]{rabi\+\_\+freq,  }\item[{}]{kick\+\_\+building\+\_\+blocks,  }\item[{}]{detuning = {\ttfamily None},  }\item[{}]{AC\+\_\+function = {\ttfamily None},  }\item[{}]{noise = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a9e68b65c25ca929728418a1835867504}{QNV4py.\+nv\+\_\+system.\+NV\+\_\+system}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a10d89113e281b60c2a23d00ebac08585}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a10d89113e281b60c2a23d00ebac08585}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!data\_points@{data\_points}}
+\index{data\_points@{data\_points}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{data\_points()}{data\_points()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+data\+\_\+points (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a1e372047c5328ebac1484ad447fd4679}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a1e372047c5328ebac1484ad447fd4679}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!evolve\_periodic@{evolve\_periodic}}
+\index{evolve\_periodic@{evolve\_periodic}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{evolve\_periodic()}{evolve\_periodic()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+evolve\+\_\+periodic (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{initial\+\_\+state,  }\item[{}]{n\+\_\+steps,  }\item[{}]{observable,  }\item[{}]{file\+\_\+name,  }\item[{}]{save\+\_\+every = {\ttfamily 1000},  }\item[{}]{save\+\_\+dir = {\ttfamily \textquotesingle{}./data/\textquotesingle{}},  }\item[{}]{folder = {\ttfamily \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}},  }\item[{}]{extra\+\_\+save\+\_\+parameters = {\ttfamily None},  }\item[{}]{seed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Method for Floquet evolution of a given sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+state} & initial state of the system. Input using Qu\+Spin e.\+g. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{initial\_state = np.zeros(basis.Ns)}
+\DoxyCodeLine{initial\_state[basis.index(\textcolor{stringliteral}{'1'}*L)]=1}
+
+\end{DoxyCode}
+ correspoding to a pure $\hat{z}$-\/polarized initial state.\\
+\hline
+{\em n\+\_\+steps} & number of Floquet periods to evolve the initial state. \\
+\hline
+{\em observable} & observables of interest. Must be list of Qu\+Spin Hamiltonian objects. \\
+\hline
+{\em save\+\_\+every} & data is automatically save after save\+\_\+every many Floquet periods. Default is 1000. \\
+\hline
+{\em file\+\_\+name} & filename (without ending) to save the data. \\
+\hline
+{\em save\+\_\+dir} & directory to save the data in. Default is \textquotesingle{}./data/\textquotesingle{}. \\
+\hline
+{\em folder} & folder name of the data set within the file file\+\_\+name to save the data (check .hdf5 format). Default is \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}. \\
+\hline
+{\em extra\+\_\+save\+\_\+parameters} & dict of additional parameters to be save. For example \{\textquotesingle{}description\textquotesingle{}\+:\textquotesingle{}This is a description of the data\textquotesingle{}\} \\
+\hline
+{\em seed} & seed used to generate noisy sequence in case noise is not None. Default is 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af6034db8284b4ce5eb4313e93387236d}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af6034db8284b4ce5eb4313e93387236d}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!evolve\_random@{evolve\_random}}
+\index{evolve\_random@{evolve\_random}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{evolve\_random()}{evolve\_random()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+evolve\+\_\+random (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{initial\+\_\+state,  }\item[{}]{n\+\_\+steps,  }\item[{}]{observable,  }\item[{}]{file\+\_\+name,  }\item[{}]{save\+\_\+every = {\ttfamily 1000},  }\item[{}]{save\+\_\+dir = {\ttfamily \textquotesingle{}./data/\textquotesingle{}},  }\item[{}]{folder = {\ttfamily \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}},  }\item[{}]{extra\+\_\+save\+\_\+parameters = {\ttfamily None},  }\item[{}]{seed = {\ttfamily 1},  }\item[{}]{seed\+\_\+random\+\_\+seq = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+Method for random evolution based on blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+state} & initial state of the system. Input using Qu\+Spin e.\+g. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{initial\_state = np.zeros(basis.Ns)}
+\DoxyCodeLine{initial\_state[basis.index(\textcolor{stringliteral}{'1'}*L)]=1}
+
+\end{DoxyCode}
+ correspoding to a pure $\hat{z}$-\/polarized initial state.\\
+\hline
+{\em n\+\_\+steps} & number of Floquet periods to evolve the initial state. \\
+\hline
+{\em observable} & observables of interest. Must be list of Qu\+Spin Hamiltonian objects. \\
+\hline
+{\em save\+\_\+every} & data is automatically save after save\+\_\+every many Floquet periods. Default is 1000. \\
+\hline
+{\em file\+\_\+name} & filename (without ending) to save the data. \\
+\hline
+{\em save\+\_\+dir} & directory to save the data in. Default is \textquotesingle{}./data/\textquotesingle{}. \\
+\hline
+{\em folder} & folder name of the data set within the file file\+\_\+name to save the data (check .hdf5 format). Default is \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}. \\
+\hline
+{\em extra\+\_\+save\+\_\+parameters} & dict of additional parameters to be save. For example \{\textquotesingle{}description\textquotesingle{}\+:\textquotesingle{}This is a description of the data\textquotesingle{}\} \\
+\hline
+{\em seed} & seed used to generate noisy sequence in case noise is not None. Default is 1. \\
+\hline
+{\em seed\+\_\+random\+\_\+seq} & seed used to generate the random sequence of blocks. Default is 2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a1a4c4e0b796085c10a8c4bbc284e5507}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a1a4c4e0b796085c10a8c4bbc284e5507}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!evolve\_sequential@{evolve\_sequential}}
+\index{evolve\_sequential@{evolve\_sequential}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{evolve\_sequential()}{evolve\_sequential()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+evolve\+\_\+sequential (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{initial\+\_\+state,  }\item[{}]{n\+\_\+steps,  }\item[{}]{observable,  }\item[{}]{sequence,  }\item[{}]{file\+\_\+name,  }\item[{}]{save\+\_\+every = {\ttfamily 1000},  }\item[{}]{save\+\_\+dir = {\ttfamily \textquotesingle{}./data/\textquotesingle{}},  }\item[{}]{folder = {\ttfamily \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}},  }\item[{}]{extra\+\_\+save\+\_\+parameters = {\ttfamily None},  }\item[{}]{seed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Method for sequential evolution based on blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+state} & initial state of the system. Input using Qu\+Spin e.\+g. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{initial\_state = np.zeros(basis.Ns)}
+\DoxyCodeLine{initial\_state[basis.index(\textcolor{stringliteral}{'1'}*L)]=1}
+
+\end{DoxyCode}
+ correspoding to a pure $\hat{z}$-\/polarized initial state.\\
+\hline
+{\em n\+\_\+steps} & number of Floquet periods to evolve the initial state. \\
+\hline
+{\em observable} & observables of interest. Must be list of Qu\+Spin Hamiltonian objects. \\
+\hline
+{\em sequence} & sequence n\+\_\+steps integers (ranging from 0 to len(building\+\_\+blocks)) specifying the drive sequence \\
+\hline
+{\em file\+\_\+name} & filename (without ending) to save the data. \\
+\hline
+{\em save\+\_\+every} & data is automatically save after save\+\_\+every many Floquet periods. Default is 1000. \\
+\hline
+{\em save\+\_\+dir} & directory to save the data in. Default is \textquotesingle{}./data/\textquotesingle{}. \\
+\hline
+{\em folder} & folder name of the data set within the file file\+\_\+name to save the data (check .hdf5 format). Default is \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}. \\
+\hline
+{\em extra\+\_\+save\+\_\+parameters} & dict of additional parameters to be save. For example \{\textquotesingle{}description\textquotesingle{}\+:\textquotesingle{}This is a description of the data\textquotesingle{}\} \\
+\hline
+{\em seed} & seed used to generate noisy sequence in case noise is not None. Default is 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a16675fabbaf08a4bcb6b2390cb0b97c8}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a16675fabbaf08a4bcb6b2390cb0b97c8}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!evolve\_time\_dependent@{evolve\_time\_dependent}}
+\index{evolve\_time\_dependent@{evolve\_time\_dependent}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{evolve\_time\_dependent()}{evolve\_time\_dependent()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+evolve\+\_\+time\+\_\+dependent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{initial\+\_\+state,  }\item[{}]{n\+\_\+steps,  }\item[{}]{observable,  }\item[{}]{discrete\+\_\+functions,  }\item[{}]{file\+\_\+name,  }\item[{}]{save\+\_\+every = {\ttfamily 1000},  }\item[{}]{save\+\_\+dir = {\ttfamily \textquotesingle{}./data/\textquotesingle{}},  }\item[{}]{folder = {\ttfamily \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}},  }\item[{}]{extra\+\_\+save\+\_\+parameters = {\ttfamily None},  }\item[{}]{seed = {\ttfamily 1},  }\item[{}]{seed\+\_\+random\+\_\+seq = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+Method for time dependent evolution based on blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+state} & initial state of the system. Input using Qu\+Spin e.\+g. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{initial\_state = np.zeros(basis.Ns)}
+\DoxyCodeLine{initial\_state[basis.index(\textcolor{stringliteral}{'1'}*L)]=1}
+
+\end{DoxyCode}
+ correspoding to a pure $\hat{z}$-\/polarized initial state.\\
+\hline
+{\em n\+\_\+steps} & number of Floquet periods to evolve the initial state. \\
+\hline
+{\em observable} & observables of interest. Must be list of Qu\+Spin Hamiltonian objects. \\
+\hline
+{\em sequence} & sequence n\+\_\+steps integers (ranging from 0 to len(building\+\_\+blocks)) specifying the drive sequence \\
+\hline
+{\em discrete\+\_\+functions} & list of functions with the length of building\+\_\+blocks. Each function describes the modification of the corresponding block over time. If None, no function will be applied. \\
+\hline
+{\em file\+\_\+name} & filename (without ending) to save the data. \\
+\hline
+{\em save\+\_\+every} & data is automatically save after save\+\_\+every many Floquet periods. Default is 1000. \\
+\hline
+{\em save\+\_\+dir} & directory to save the data in. Default is \textquotesingle{}./data/\textquotesingle{}. \\
+\hline
+{\em folder} & folder name of the data set within the file file\+\_\+name to save the data (check .hdf5 format). Default is \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{}. \\
+\hline
+{\em extra\+\_\+save\+\_\+parameters} & dict of additional parameters to be save. For example \{\textquotesingle{}description\textquotesingle{}\+:\textquotesingle{}This is a description of the data\textquotesingle{}\} \\
+\hline
+{\em seed} & seed used to generate noisy sequence in case noise is not None. Default is 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_aa3c5c82bf9f9df04aac635e900396656}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_aa3c5c82bf9f9df04aac635e900396656}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!save\_data@{save\_data}}
+\index{save\_data@{save\_data}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{save\_data()}{save\_data()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+save\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{file\+\_\+name,  }\item[{}]{save\+\_\+dir,  }\item[{}]{folder,  }\item[{}]{data\+\_\+name,  }\item[{}]{overwrite = {\ttfamily False},  }\item[{}]{extra\+\_\+save\+\_\+parameters = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Method to save data in hdf5 format. 
+
+Called during evolve\+\_\+periodic, evolve\+\_\+random and evolve\+\_\+sequential. All relevant parameters of the system are stored automaticlly within the data set and do not need to be specified explicitly in e.\+g. the file name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & input data to be stored in hdf5 format \\
+\hline
+{\em file\+\_\+name} & filename (without ending) of the resulting file \\
+\hline
+{\em save\+\_\+dir} & directory where to store the data. Generated if not existent \\
+\hline
+{\em folder} & Folder within the hdf5 file where to store the data \\
+\hline
+{\em data\+\_\+name} & name of the data set that is stored in the hdf5 file (hdf stands for hirachical data format). One can make use of the hirachical structre by adding \textquotesingle{}/\textquotesingle{} to the data\+\_\+name. Then, interanlly a folder structre will be generated in the .hdf5 file. If data\+\_\+name is not specfified, the default value \textquotesingle{}new\+\_\+data\+\_\+set\textquotesingle{} wil be used \\
+\hline
+{\em overwrite} & bool, if False, the method checks for existing files (and data\+\_\+sets within the files) and avoids overwriting by creating adding a new data set in the correspoinding file (instead of overwriting existing ones). If True, no checks are applied. Default is False. \\
+\hline
+{\em extra\+\_\+save\+\_\+parameters} & add extra parameters/description of the data stored in the corresponding data set of the .hdf5 file. Must be dict or None. For instance \{\textquotesingle{}description\textquotesingle{}\+:\textquotesingle{}some description of the data\textquotesingle{}\}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data\+\_\+group 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a034d45b621c1201a2f343d1b3b226593}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a034d45b621c1201a2f343d1b3b226593}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!save\_data\_tuple@{save\_data\_tuple}}
+\index{save\_data\_tuple@{save\_data\_tuple}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{save\_data\_tuple()}{save\_data\_tuple()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+save\+\_\+data\+\_\+tuple (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data\+\_\+tuple,  }\item[{}]{file\+\_\+name,  }\item[{}]{save\+\_\+dir,  }\item[{}]{folder,  }\item[{}]{sub\+\_\+directories,  }\item[{}]{overwrite = {\ttfamily False},  }\item[{}]{extra\+\_\+save\+\_\+parameters = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_aa25f874965c62520760e6896ebf753d3}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_aa25f874965c62520760e6896ebf753d3}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!sequence\_elements@{sequence\_elements}}
+\index{sequence\_elements@{sequence\_elements}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{sequence\_elements()}{sequence\_elements()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+sequence\+\_\+elements (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af40a5d9f8563813e583701d42a6d9a5b}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_af40a5d9f8563813e583701d42a6d9a5b}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!AC\_function@{AC\_function}}
+\index{AC\_function@{AC\_function}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{AC\_function}{AC\_function}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+AC\+\_\+function}
+
+
+
+AC function. 
+
+Must be list e.\+g. \mbox{[}function, parameter1, parameter2, parameter3\mbox{]}. Then, during time evolution f(x,parameter1,parameter2,parameter3) will be used (and integrated over x). Applied to each block of the sequence (see building\+\_\+blocks) separately. \mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a30b7a1b40087d3f565ca7a7a2ce13b01}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a30b7a1b40087d3f565ca7a7a2ce13b01}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!building\_blocks@{building\_blocks}}
+\index{building\_blocks@{building\_blocks}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{building\_blocks}{building\_blocks}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+building\+\_\+blocks}
+
+
+
+building blocks of the seqeunces to be applied 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_adaa7de49fb573f82e0e6da5ae08726bd}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_adaa7de49fb573f82e0e6da5ae08726bd}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!detuning@{detuning}}
+\index{detuning@{detuning}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{detuning}{detuning}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+detuning}
+
+
+
+Detuning. 
+
+Default is None \mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a8c4620acab6411911501c9a3186120ad}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a8c4620acab6411911501c9a3186120ad}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!noise@{noise}}
+\index{noise@{noise}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{noise}{noise}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+noise}
+
+
+
+noise attributed to the drive. 
+
+E.\+g. 0.\+05 corresponds to max 5\% variataion every time the dipolar Hamiltonian is applied during time evolution \mbox{\Hypertarget{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a2163c19414a4c4d8e71582f514f6ec2d}\label{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a2163c19414a4c4d8e71582f514f6ec2d}} 
+\index{QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}!rabi\_freq@{rabi\_freq}}
+\index{rabi\_freq@{rabi\_freq}!QNV4py.nv\_dynamics.NV\_dynamics@{QNV4py.nv\_dynamics.NV\_dynamics}}
+\doxysubsubsection{\texorpdfstring{rabi\_freq}{rabi\_freq}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics.\+rabi\+\_\+freq}
+
+
+
+Rabi frequency. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/christoph/nv-\/center/\+QNV4py/\+QNV4py/\mbox{\hyperlink{nv__dynamics_8py}{nv\+\_\+dynamics.\+py}}\end{DoxyCompactItemize}

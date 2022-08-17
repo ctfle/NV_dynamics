@@ -1,0 +1,44 @@
+Python package for (periodically) driven dipolar coupled $ C^{13} $ nuclear spins. The package includes the class \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{NV\+\_\+system}} to create and design a system of dipolar coupled $ C^{13} $ spins centered around a central NV center, and the class NV\+\_\+dynamics for the time evolution of pure initial states of \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{NV\+\_\+system}} objects.\hypertarget{index_notes_main}{}\doxysubsection{To be done}\label{index_notes_main}
+
+\begin{DoxyItemize}
+\item function to construct different initial states?
+\item function to construct observables?
+\item make it work on windows
+\end{DoxyItemize}\hypertarget{index_intsall}{}\doxysubsection{Installation via pip}\label{index_intsall}
+Open a terminal window and navigate into the folder \mbox{\hyperlink{namespace_q_n_v4py}{QNV4py}}. Type 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pip install . }
+
+\end{DoxyCode}
+
+
+Alternatively\+: Open a terminal window, navigate into the folder \mbox{\hyperlink{namespace_q_n_v4py}{QNV4py}}. Type 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make install}
+
+\end{DoxyCode}
+
+
+To open the documentation file from the terminal\+: Open a terminal window and navigate to the folder \mbox{\hyperlink{namespace_q_n_v4py}{QNV4py}}. Type 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make show docu}
+
+\end{DoxyCode}
+\hypertarget{index_notes_packages}{}\doxysubsection{Required packages}\label{index_notes_packages}
+
+\begin{DoxyItemize}
+\item numpy, scipy
+\item h5py, python package for .hdf5 data files (\href{https://www.hdfgroup.org/solutions/hdf5/}{\texttt{ https\+://www.\+hdfgroup.\+org/solutions/hdf5/}})
+\item Quspin, for the construction of observables and Hamiltonians (\href{https://weinbe58.github.io/QuSpin/}{\texttt{ https\+://weinbe58.\+github.\+io/\+Qu\+Spin/}})
+\end{DoxyItemize}\hypertarget{index_notes_examples}{}\doxysubsection{How to use the code\+:}\label{index_notes_examples}
+Check out the example files under \textquotesingle{}Related Pages\textquotesingle{} (sidebar)!
+
+The code consists of two classes\+: \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{NV\+\_\+system}}, to construct a random graph of $ C^{13} $ atoms, and NV\+\_\+dynamics to evolve in time with user defined sequence. To setup a working code, first you have to construct a \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{NV\+\_\+system}} object. Then, use it to build a NV\+\_\+dynamics object. \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{NV\+\_\+system}} can be used with default parameter settings (for example {\ttfamily  C13\+\_\+object = NV\+\_\+system.\+default(\+L) }), which builds the random graph with default settings. An NV\+\_\+dynamics object requires the following input\+:
+\begin{DoxyItemize}
+\item nv\+\_\+instance, an \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{NV\+\_\+system}} object
+\item rabi\+\_\+freq, the amplitude of the kicks
+\item kick\+\_\+building\+\_\+blocks, the building blocks of the drive
+\item detuning=None, Detuning (left over single particle field in the rotating frame, Default None)
+\item AC\+\_\+function=None, an AC field given as an arbitrary function, Default None
+\item noise=None, some noise to increase ergodicity, Default None 
+\end{DoxyItemize}

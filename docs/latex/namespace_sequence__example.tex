@@ -1,0 +1,205 @@
+\hypertarget{namespace_sequence__example}{}\doxysection{Sequence\+\_\+example Namespace Reference}
+\label{namespace_sequence__example}\index{Sequence\_example@{Sequence\_example}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_sequence__example_ad2983700e9fbcb7886f7e6830e192dc2}{func}} (x, w)
+\item 
+def \mbox{\hyperlink{namespace_sequence__example_ada6b1db437c4b5ecdcff386f0d7cb8b8}{fibonacci}} (n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_sequence__example_adf764f7c0d006844288e92f449f0d469}{L}} = 12
+\item 
+float \mbox{\hyperlink{namespace_sequence__example_a6d6b65fb1df6479867269c025eb431d6}{min\+\_\+r}} = 0.\+9
+\item 
+float \mbox{\hyperlink{namespace_sequence__example_a6b7a529d334db5ab1731086ad15550b8}{max\+\_\+r}} = 1.\+1
+\item 
+int \mbox{\hyperlink{namespace_sequence__example_af83955fb7e144b7c13d89aebb5cd5060}{seed}} = 1
+\item 
+string \mbox{\hyperlink{namespace_sequence__example_a5369c536eec846cd09253d3b2ee2b062}{B\+\_\+field\+\_\+dir}} = \textquotesingle{}z\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_sequence__example_aef9d36d7f09d46fbd95f15c97d806b88}{detuning}} = None
+\item 
+int \mbox{\hyperlink{namespace_sequence__example_a5d112b8ff8b2e30095d5f2df6a004801}{rabi\+\_\+freq}} = np.\+pi/2
+\item 
+float \mbox{\hyperlink{namespace_sequence__example_a3b856990673f2cc0945228e140fcfe5b}{noise}} = 0.\+05
+\item 
+\mbox{\hyperlink{namespace_sequence__example_ae855c41593cad60edfeb48646fadbd04}{c13\+\_\+spins}} = qnv.\+NV\+\_\+system.\+default(\mbox{\hyperlink{namespace_sequence__example_adf764f7c0d006844288e92f449f0d469}{L}})
+\item 
+list \mbox{\hyperlink{namespace_sequence__example_af6bf27bbb73b6825fe20b11caeb44125}{AC\+\_\+function}} = \mbox{[}\mbox{\hyperlink{namespace_sequence__example_ad2983700e9fbcb7886f7e6830e192dc2}{func}},2$\ast$np.\+pi/(0.\+5+0.\+2+0.\+1)\mbox{]}
+\item 
+list \mbox{\hyperlink{namespace_sequence__example_ab3ee767108cd27aadd3a8ec1b404deb4}{kick\+\_\+building\+\_\+blocks}} = \mbox{[} \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1\mbox{]}, \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1 \mbox{]} \mbox{]}
+\item 
+\mbox{\hyperlink{namespace_sequence__example_a5d84fd628de974ac36754765f699812e}{c13\+\_\+dynamics}} = qnv.\+NV\+\_\+dynamics(\mbox{\hyperlink{namespace_sequence__example_ae855c41593cad60edfeb48646fadbd04}{c13\+\_\+spins}},\mbox{\hyperlink{namespace_sequence__example_a5d112b8ff8b2e30095d5f2df6a004801}{rabi\+\_\+freq}},\mbox{\hyperlink{namespace_sequence__example_ab3ee767108cd27aadd3a8ec1b404deb4}{kick\+\_\+building\+\_\+blocks}},\mbox{\hyperlink{namespace_sequence__example_aef9d36d7f09d46fbd95f15c97d806b88}{detuning}},\mbox{\hyperlink{namespace_sequence__example_af6bf27bbb73b6825fe20b11caeb44125}{AC\+\_\+function}},\mbox{\hyperlink{namespace_sequence__example_a3b856990673f2cc0945228e140fcfe5b}{noise}})
+\item 
+\mbox{\hyperlink{namespace_sequence__example_a0b8e6e8a4d4c374735e6234ddbe2d7fb}{observables}} = c13\+\_\+spins.\+SP\+\_\+observable(\mbox{[}\textquotesingle{}x\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_sequence__example_ae63fdb8eb6f7ce14b3c6d33f871f6a29}{psi\+\_\+i}} = c13\+\_\+spins.\+initial\+\_\+state(\textquotesingle{}x\textquotesingle{})
+\item 
+dictionary \mbox{\hyperlink{namespace_sequence__example_a2e8c5df690b862e8fd99b00ca5a3f3c5}{description}}
+\item 
+def \mbox{\hyperlink{namespace_sequence__example_af09c4328ca1ccac1cbbf29a5a070db5d}{sequence}} = \mbox{\hyperlink{namespace_sequence__example_ada6b1db437c4b5ecdcff386f0d7cb8b8}{fibonacci}}(10)
+\item 
+\mbox{\hyperlink{namespace_sequence__example_a4c91adac22efbecbe14253ac402ac0b2}{steps}} = len(\mbox{\hyperlink{namespace_sequence__example_af09c4328ca1ccac1cbbf29a5a070db5d}{sequence}})
+\item 
+\mbox{\hyperlink{namespace_sequence__example_ae3bdfaa790ac6b703a02f626b22c453a}{times}}
+\item 
+\mbox{\hyperlink{namespace_sequence__example_aea2052fdb59a1e6a4a990cd8bf259dbc}{save\+\_\+every}}
+\item 
+\mbox{\hyperlink{namespace_sequence__example_a1667e05f2ae5aa0af684b4038b8f80f5}{folder}}
+\item 
+\mbox{\hyperlink{namespace_sequence__example_a9b2d7cbd7f392310c312d611f7e5a133}{extra\+\_\+save\+\_\+parameters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_sequence__example_ada6b1db437c4b5ecdcff386f0d7cb8b8}\label{namespace_sequence__example_ada6b1db437c4b5ecdcff386f0d7cb8b8}} 
+\index{Sequence\_example@{Sequence\_example}!fibonacci@{fibonacci}}
+\index{fibonacci@{fibonacci}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{fibonacci()}{fibonacci()}}
+{\footnotesize\ttfamily def Sequence\+\_\+example.\+fibonacci (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_sequence__example_ad2983700e9fbcb7886f7e6830e192dc2}\label{namespace_sequence__example_ad2983700e9fbcb7886f7e6830e192dc2}} 
+\index{Sequence\_example@{Sequence\_example}!func@{func}}
+\index{func@{func}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily def Sequence\+\_\+example.\+func (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{w }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_sequence__example_af6bf27bbb73b6825fe20b11caeb44125}\label{namespace_sequence__example_af6bf27bbb73b6825fe20b11caeb44125}} 
+\index{Sequence\_example@{Sequence\_example}!AC\_function@{AC\_function}}
+\index{AC\_function@{AC\_function}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{AC\_function}{AC\_function}}
+{\footnotesize\ttfamily list Sequence\+\_\+example.\+AC\+\_\+function = \mbox{[}\mbox{\hyperlink{namespace_sequence__example_ad2983700e9fbcb7886f7e6830e192dc2}{func}},2$\ast$np.\+pi/(0.\+5+0.\+2+0.\+1)\mbox{]}}
+
+\mbox{\Hypertarget{namespace_sequence__example_a5369c536eec846cd09253d3b2ee2b062}\label{namespace_sequence__example_a5369c536eec846cd09253d3b2ee2b062}} 
+\index{Sequence\_example@{Sequence\_example}!B\_field\_dir@{B\_field\_dir}}
+\index{B\_field\_dir@{B\_field\_dir}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{B\_field\_dir}{B\_field\_dir}}
+{\footnotesize\ttfamily string Sequence\+\_\+example.\+B\+\_\+field\+\_\+dir = \textquotesingle{}z\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_sequence__example_a5d84fd628de974ac36754765f699812e}\label{namespace_sequence__example_a5d84fd628de974ac36754765f699812e}} 
+\index{Sequence\_example@{Sequence\_example}!c13\_dynamics@{c13\_dynamics}}
+\index{c13\_dynamics@{c13\_dynamics}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{c13\_dynamics}{c13\_dynamics}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+c13\+\_\+dynamics = qnv.\+NV\+\_\+dynamics(\mbox{\hyperlink{namespace_sequence__example_ae855c41593cad60edfeb48646fadbd04}{c13\+\_\+spins}},\mbox{\hyperlink{namespace_sequence__example_a5d112b8ff8b2e30095d5f2df6a004801}{rabi\+\_\+freq}},\mbox{\hyperlink{namespace_sequence__example_ab3ee767108cd27aadd3a8ec1b404deb4}{kick\+\_\+building\+\_\+blocks}},\mbox{\hyperlink{namespace_sequence__example_aef9d36d7f09d46fbd95f15c97d806b88}{detuning}},\mbox{\hyperlink{namespace_sequence__example_af6bf27bbb73b6825fe20b11caeb44125}{AC\+\_\+function}},\mbox{\hyperlink{namespace_sequence__example_a3b856990673f2cc0945228e140fcfe5b}{noise}})}
+
+\mbox{\Hypertarget{namespace_sequence__example_ae855c41593cad60edfeb48646fadbd04}\label{namespace_sequence__example_ae855c41593cad60edfeb48646fadbd04}} 
+\index{Sequence\_example@{Sequence\_example}!c13\_spins@{c13\_spins}}
+\index{c13\_spins@{c13\_spins}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{c13\_spins}{c13\_spins}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+c13\+\_\+spins = qnv.\+NV\+\_\+system.\+default(\mbox{\hyperlink{namespace_sequence__example_adf764f7c0d006844288e92f449f0d469}{L}})}
+
+\mbox{\Hypertarget{namespace_sequence__example_a2e8c5df690b862e8fd99b00ca5a3f3c5}\label{namespace_sequence__example_a2e8c5df690b862e8fd99b00ca5a3f3c5}} 
+\index{Sequence\_example@{Sequence\_example}!description@{description}}
+\index{description@{description}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily dictionary Sequence\+\_\+example.\+description}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{\textcolor{stringliteral}{'description'}:\textcolor{stringliteral}{"{}We store x,y and z magentization,the sequences is given by\(\backslash\)}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{                              [[('x',0.5),('dd',1.0),('y',0.4)],4], [[('z',0.5)],2]"{}},}
+\DoxyCodeLine{3                \textcolor{stringliteral}{'comment'}:\textcolor{stringliteral}{'this is the first data set of the series'}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_sequence__example_aef9d36d7f09d46fbd95f15c97d806b88}\label{namespace_sequence__example_aef9d36d7f09d46fbd95f15c97d806b88}} 
+\index{Sequence\_example@{Sequence\_example}!detuning@{detuning}}
+\index{detuning@{detuning}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{detuning}{detuning}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+detuning = None}
+
+\mbox{\Hypertarget{namespace_sequence__example_a9b2d7cbd7f392310c312d611f7e5a133}\label{namespace_sequence__example_a9b2d7cbd7f392310c312d611f7e5a133}} 
+\index{Sequence\_example@{Sequence\_example}!extra\_save\_parameters@{extra\_save\_parameters}}
+\index{extra\_save\_parameters@{extra\_save\_parameters}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{extra\_save\_parameters}{extra\_save\_parameters}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+extra\+\_\+save\+\_\+parameters}
+
+\mbox{\Hypertarget{namespace_sequence__example_a1667e05f2ae5aa0af684b4038b8f80f5}\label{namespace_sequence__example_a1667e05f2ae5aa0af684b4038b8f80f5}} 
+\index{Sequence\_example@{Sequence\_example}!folder@{folder}}
+\index{folder@{folder}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{folder}{folder}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+folder}
+
+\mbox{\Hypertarget{namespace_sequence__example_ab3ee767108cd27aadd3a8ec1b404deb4}\label{namespace_sequence__example_ab3ee767108cd27aadd3a8ec1b404deb4}} 
+\index{Sequence\_example@{Sequence\_example}!kick\_building\_blocks@{kick\_building\_blocks}}
+\index{kick\_building\_blocks@{kick\_building\_blocks}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{kick\_building\_blocks}{kick\_building\_blocks}}
+{\footnotesize\ttfamily list Sequence\+\_\+example.\+kick\+\_\+building\+\_\+blocks = \mbox{[} \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1\mbox{]}, \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1 \mbox{]} \mbox{]}}
+
+\mbox{\Hypertarget{namespace_sequence__example_adf764f7c0d006844288e92f449f0d469}\label{namespace_sequence__example_adf764f7c0d006844288e92f449f0d469}} 
+\index{Sequence\_example@{Sequence\_example}!L@{L}}
+\index{L@{L}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily int Sequence\+\_\+example.\+L = 12}
+
+\mbox{\Hypertarget{namespace_sequence__example_a6b7a529d334db5ab1731086ad15550b8}\label{namespace_sequence__example_a6b7a529d334db5ab1731086ad15550b8}} 
+\index{Sequence\_example@{Sequence\_example}!max\_r@{max\_r}}
+\index{max\_r@{max\_r}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{max\_r}{max\_r}}
+{\footnotesize\ttfamily float Sequence\+\_\+example.\+max\+\_\+r = 1.\+1}
+
+\mbox{\Hypertarget{namespace_sequence__example_a6d6b65fb1df6479867269c025eb431d6}\label{namespace_sequence__example_a6d6b65fb1df6479867269c025eb431d6}} 
+\index{Sequence\_example@{Sequence\_example}!min\_r@{min\_r}}
+\index{min\_r@{min\_r}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{min\_r}{min\_r}}
+{\footnotesize\ttfamily float Sequence\+\_\+example.\+min\+\_\+r = 0.\+9}
+
+\mbox{\Hypertarget{namespace_sequence__example_a3b856990673f2cc0945228e140fcfe5b}\label{namespace_sequence__example_a3b856990673f2cc0945228e140fcfe5b}} 
+\index{Sequence\_example@{Sequence\_example}!noise@{noise}}
+\index{noise@{noise}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{noise}{noise}}
+{\footnotesize\ttfamily float Sequence\+\_\+example.\+noise = 0.\+05}
+
+\mbox{\Hypertarget{namespace_sequence__example_a0b8e6e8a4d4c374735e6234ddbe2d7fb}\label{namespace_sequence__example_a0b8e6e8a4d4c374735e6234ddbe2d7fb}} 
+\index{Sequence\_example@{Sequence\_example}!observables@{observables}}
+\index{observables@{observables}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{observables}{observables}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+observables = c13\+\_\+spins.\+SP\+\_\+observable(\mbox{[}\textquotesingle{}x\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespace_sequence__example_ae63fdb8eb6f7ce14b3c6d33f871f6a29}\label{namespace_sequence__example_ae63fdb8eb6f7ce14b3c6d33f871f6a29}} 
+\index{Sequence\_example@{Sequence\_example}!psi\_i@{psi\_i}}
+\index{psi\_i@{psi\_i}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{psi\_i}{psi\_i}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+psi\+\_\+i = c13\+\_\+spins.\+initial\+\_\+state(\textquotesingle{}x\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_sequence__example_a5d112b8ff8b2e30095d5f2df6a004801}\label{namespace_sequence__example_a5d112b8ff8b2e30095d5f2df6a004801}} 
+\index{Sequence\_example@{Sequence\_example}!rabi\_freq@{rabi\_freq}}
+\index{rabi\_freq@{rabi\_freq}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{rabi\_freq}{rabi\_freq}}
+{\footnotesize\ttfamily int Sequence\+\_\+example.\+rabi\+\_\+freq = np.\+pi/2}
+
+\mbox{\Hypertarget{namespace_sequence__example_aea2052fdb59a1e6a4a990cd8bf259dbc}\label{namespace_sequence__example_aea2052fdb59a1e6a4a990cd8bf259dbc}} 
+\index{Sequence\_example@{Sequence\_example}!save\_every@{save\_every}}
+\index{save\_every@{save\_every}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{save\_every}{save\_every}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+save\+\_\+every}
+
+\mbox{\Hypertarget{namespace_sequence__example_af83955fb7e144b7c13d89aebb5cd5060}\label{namespace_sequence__example_af83955fb7e144b7c13d89aebb5cd5060}} 
+\index{Sequence\_example@{Sequence\_example}!seed@{seed}}
+\index{seed@{seed}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Sequence\+\_\+example.\+seed = 1}
+
+\mbox{\Hypertarget{namespace_sequence__example_af09c4328ca1ccac1cbbf29a5a070db5d}\label{namespace_sequence__example_af09c4328ca1ccac1cbbf29a5a070db5d}} 
+\index{Sequence\_example@{Sequence\_example}!sequence@{sequence}}
+\index{sequence@{sequence}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{sequence}{sequence}}
+{\footnotesize\ttfamily def Sequence\+\_\+example.\+sequence = \mbox{\hyperlink{namespace_sequence__example_ada6b1db437c4b5ecdcff386f0d7cb8b8}{fibonacci}}(10)}
+
+\mbox{\Hypertarget{namespace_sequence__example_a4c91adac22efbecbe14253ac402ac0b2}\label{namespace_sequence__example_a4c91adac22efbecbe14253ac402ac0b2}} 
+\index{Sequence\_example@{Sequence\_example}!steps@{steps}}
+\index{steps@{steps}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+steps = len(\mbox{\hyperlink{namespace_sequence__example_af09c4328ca1ccac1cbbf29a5a070db5d}{sequence}})}
+
+\mbox{\Hypertarget{namespace_sequence__example_ae3bdfaa790ac6b703a02f626b22c453a}\label{namespace_sequence__example_ae3bdfaa790ac6b703a02f626b22c453a}} 
+\index{Sequence\_example@{Sequence\_example}!times@{times}}
+\index{times@{times}!Sequence\_example@{Sequence\_example}}
+\doxysubsubsection{\texorpdfstring{times}{times}}
+{\footnotesize\ttfamily Sequence\+\_\+example.\+times}
+

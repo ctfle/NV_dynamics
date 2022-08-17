@@ -1,0 +1,130 @@
+\hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs}{}\doxysection{QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs Class Reference}
+\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs}\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a21035a2cd1b1588fa0dd3afd575265f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a52af6058af6618ceb159b2e873a7f11c}{sampling\+\_\+points}} (self, B\+\_\+field\+\_\+dir, min\+\_\+dist, max\+\_\+dist, L, seed)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a69c55996f82ee470f3aab0887a3e8d84}{construct\+\_\+\+Hamiltonian}} (self, basis, coupling\+\_\+terms)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a6ff4db996b0d21f9678a455fe9f8245a}{compute\+\_\+observables}} (self, j, psi, L, obs, O)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_af437135e4ea4bebf88b724ea9f7a9266}{estimate\+\_\+scales}} (self, basis, L, H, delta\+\_\+t=0.\+0005, time\+\_\+steps=1000)
+\begin{DoxyCompactList}\small\item\em estimates relevant time scales via decay of spins using the fully polarized state as init state \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a682e0bd154a77c445cb9f94b5597dd33}{compute\+\_\+single\+\_\+particle\+\_\+fields}} (self, spin\+\_\+positions, energy\+\_\+scale, B\+\_\+field\+\_\+dir, scaling\+\_\+factor=1)
+\begin{DoxyCompactList}\small\item\em Computes single particle terms originating from the NV center at the origin. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a4c203b1f8d3da92d4b3380cad1e95b71}{yes\+\_\+no}} (self, message)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_acd079ca8fe62f3a9765c9755d8c93947}{setup\+\_\+expH}} (self, L, basis, H\+\_\+dd, kick\+\_\+building\+\_\+blocks, rabi\+\_\+freq, detuning, AC\+\_\+function, noise)
+\begin{DoxyCompactList}\small\item\em Constructs all the matrix exponentials from the building block inputs of the sequence. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a1fcc3d96b8f243bbec6ba828860eb4bc}{copy\+\_\+attributes}} (self, inpt)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a3d4350d965f5a098b7bae23da97acdc8}{update\+\_\+building\+\_\+blocks}} (self, element, L, basis, H\+\_\+dd, rabi\+\_\+freq, detuning, AC\+\_\+function, noise)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a6a09710bf7b263722b7b2387ed0aec38}{build\+\_\+noisy\+\_\+expH}} (self, L, basis, H\+\_\+dd, rabi\+\_\+freq, detuning, AC\+\_\+function, current\+\_\+time, time, noise, random\+\_\+num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a91c82143284d760308fc6fc072709e28}{description}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a21035a2cd1b1588fa0dd3afd575265f2}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a21035a2cd1b1588fa0dd3afd575265f2}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a6a09710bf7b263722b7b2387ed0aec38}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a6a09710bf7b263722b7b2387ed0aec38}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!build\_noisy\_expH@{build\_noisy\_expH}}
+\index{build\_noisy\_expH@{build\_noisy\_expH}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{build\_noisy\_expH()}{build\_noisy\_expH()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+build\+\_\+noisy\+\_\+expH (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{L,  }\item[{}]{basis,  }\item[{}]{H\+\_\+dd,  }\item[{}]{rabi\+\_\+freq,  }\item[{}]{detuning,  }\item[{}]{AC\+\_\+function,  }\item[{}]{current\+\_\+time,  }\item[{}]{time,  }\item[{}]{noise,  }\item[{}]{random\+\_\+num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a6ff4db996b0d21f9678a455fe9f8245a}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a6ff4db996b0d21f9678a455fe9f8245a}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!compute\_observables@{compute\_observables}}
+\index{compute\_observables@{compute\_observables}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{compute\_observables()}{compute\_observables()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+compute\+\_\+observables (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{j,  }\item[{}]{psi,  }\item[{}]{L,  }\item[{}]{obs,  }\item[{}]{O }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a682e0bd154a77c445cb9f94b5597dd33}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a682e0bd154a77c445cb9f94b5597dd33}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!compute\_single\_particle\_fields@{compute\_single\_particle\_fields}}
+\index{compute\_single\_particle\_fields@{compute\_single\_particle\_fields}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{compute\_single\_particle\_fields()}{compute\_single\_particle\_fields()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+compute\+\_\+single\+\_\+particle\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{spin\+\_\+positions,  }\item[{}]{energy\+\_\+scale,  }\item[{}]{B\+\_\+field\+\_\+dir,  }\item[{}]{scaling\+\_\+factor = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Computes single particle terms originating from the NV center at the origin. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a69c55996f82ee470f3aab0887a3e8d84}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a69c55996f82ee470f3aab0887a3e8d84}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!construct\_Hamiltonian@{construct\_Hamiltonian}}
+\index{construct\_Hamiltonian@{construct\_Hamiltonian}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{construct\_Hamiltonian()}{construct\_Hamiltonian()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+construct\+\_\+\+Hamiltonian (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{basis,  }\item[{}]{coupling\+\_\+terms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a1fcc3d96b8f243bbec6ba828860eb4bc}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a1fcc3d96b8f243bbec6ba828860eb4bc}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!copy\_attributes@{copy\_attributes}}
+\index{copy\_attributes@{copy\_attributes}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{copy\_attributes()}{copy\_attributes()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+copy\+\_\+attributes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{inpt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_af437135e4ea4bebf88b724ea9f7a9266}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_af437135e4ea4bebf88b724ea9f7a9266}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!estimate\_scales@{estimate\_scales}}
+\index{estimate\_scales@{estimate\_scales}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{estimate\_scales()}{estimate\_scales()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+estimate\+\_\+scales (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{basis,  }\item[{}]{L,  }\item[{}]{H,  }\item[{}]{delta\+\_\+t = {\ttfamily 0.0005},  }\item[{}]{time\+\_\+steps = {\ttfamily 1000} }\end{DoxyParamCaption})}
+
+
+
+estimates relevant time scales via decay of spins using the fully polarized state as init state 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a52af6058af6618ceb159b2e873a7f11c}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a52af6058af6618ceb159b2e873a7f11c}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!sampling\_points@{sampling\_points}}
+\index{sampling\_points@{sampling\_points}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{sampling\_points()}{sampling\_points()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+sampling\+\_\+points (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{B\+\_\+field\+\_\+dir,  }\item[{}]{min\+\_\+dist,  }\item[{}]{max\+\_\+dist,  }\item[{}]{L,  }\item[{}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_acd079ca8fe62f3a9765c9755d8c93947}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_acd079ca8fe62f3a9765c9755d8c93947}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!setup\_expH@{setup\_expH}}
+\index{setup\_expH@{setup\_expH}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{setup\_expH()}{setup\_expH()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+setup\+\_\+expH (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{L,  }\item[{}]{basis,  }\item[{}]{H\+\_\+dd,  }\item[{}]{kick\+\_\+building\+\_\+blocks,  }\item[{}]{rabi\+\_\+freq,  }\item[{}]{detuning,  }\item[{}]{AC\+\_\+function,  }\item[{}]{noise }\end{DoxyParamCaption})}
+
+
+
+Constructs all the matrix exponentials from the building block inputs of the sequence. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a3d4350d965f5a098b7bae23da97acdc8}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a3d4350d965f5a098b7bae23da97acdc8}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!update\_building\_blocks@{update\_building\_blocks}}
+\index{update\_building\_blocks@{update\_building\_blocks}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{update\_building\_blocks()}{update\_building\_blocks()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+update\+\_\+building\+\_\+blocks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element,  }\item[{}]{L,  }\item[{}]{basis,  }\item[{}]{H\+\_\+dd,  }\item[{}]{rabi\+\_\+freq,  }\item[{}]{detuning,  }\item[{}]{AC\+\_\+function,  }\item[{}]{noise }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a4c203b1f8d3da92d4b3380cad1e95b71}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a4c203b1f8d3da92d4b3380cad1e95b71}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!yes\_no@{yes\_no}}
+\index{yes\_no@{yes\_no}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{yes\_no()}{yes\_no()}}
+{\footnotesize\ttfamily def QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+yes\+\_\+no (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a91c82143284d760308fc6fc072709e28}\label{class_q_n_v4py_1_1helper__funcs_1_1_helper__funcs_a91c82143284d760308fc6fc072709e28}} 
+\index{QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}!description@{description}}
+\index{description@{description}!QNV4py.helper\_funcs.Helper\_funcs@{QNV4py.helper\_funcs.Helper\_funcs}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily QNV4py.\+helper\+\_\+funcs.\+Helper\+\_\+funcs.\+description}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/christoph/nv-\/center/\+QNV4py/\+QNV4py/\mbox{\hyperlink{helper__funcs_8py}{helper\+\_\+funcs.\+py}}\end{DoxyCompactItemize}

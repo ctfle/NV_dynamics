@@ -1,0 +1,189 @@
+\hypertarget{namespace_random__example}{}\doxysection{Random\+\_\+example Namespace Reference}
+\label{namespace_random__example}\index{Random\_example@{Random\_example}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_random__example_a42f59a0d7100f0c02e7d41637c84f7f9}{func}} (x, w)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_random__example_a885c1a72e4d78f2f5e9ccced506e7c47}{L}} = 12
+\item 
+float \mbox{\hyperlink{namespace_random__example_ab60b7adb7eee22f683f166996ac4d43c}{min\+\_\+r}} = 0.\+9
+\item 
+float \mbox{\hyperlink{namespace_random__example_ad8bc7fa75eec2d6a8a4c0d50cd3b2148}{max\+\_\+r}} = 1.\+1
+\item 
+int \mbox{\hyperlink{namespace_random__example_aa289535ce737316532033ed814f0c86c}{seed}} = 1
+\item 
+string \mbox{\hyperlink{namespace_random__example_a902e610b56247e0234c682fe937a9b91}{B\+\_\+field\+\_\+dir}} = \textquotesingle{}z\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_random__example_a38569ed76a18c4bd200202051db0d16c}{detuning}} = None
+\item 
+int \mbox{\hyperlink{namespace_random__example_ae5bd37ae506a6919ad186cc7d625f184}{rabi\+\_\+freq}} = np.\+pi/2
+\item 
+float \mbox{\hyperlink{namespace_random__example_a56e20e921fcace1b196790bca8ca4f39}{noise}} = 0.\+05
+\item 
+\mbox{\hyperlink{namespace_random__example_a716bbeb83175da64dca96f1ec8bc5706}{c13\+\_\+spins}} = qnv.\+NV\+\_\+system.\+default(\mbox{\hyperlink{namespace_random__example_a885c1a72e4d78f2f5e9ccced506e7c47}{L}})
+\item 
+list \mbox{\hyperlink{namespace_random__example_adee8599936ceed53aa20a1b37faffff0}{AC\+\_\+function}} = \mbox{[}\mbox{\hyperlink{namespace_random__example_a42f59a0d7100f0c02e7d41637c84f7f9}{func}},2$\ast$np.\+pi/(0.\+5+0.\+2+0.\+1)\mbox{]}
+\item 
+list \mbox{\hyperlink{namespace_random__example_afde9b74f08942ca451d4a9210514a21e}{kick\+\_\+building\+\_\+blocks}} = \mbox{[} \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1\mbox{]}, \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1 \mbox{]} \mbox{]}
+\item 
+\mbox{\hyperlink{namespace_random__example_a02b181afecaae6313a2e9b048d4631e2}{c13\+\_\+dynamics}} = qnv.\+NV\+\_\+dynamics(\mbox{\hyperlink{namespace_random__example_a716bbeb83175da64dca96f1ec8bc5706}{c13\+\_\+spins}},\mbox{\hyperlink{namespace_random__example_ae5bd37ae506a6919ad186cc7d625f184}{rabi\+\_\+freq}},\mbox{\hyperlink{namespace_random__example_afde9b74f08942ca451d4a9210514a21e}{kick\+\_\+building\+\_\+blocks}},\mbox{\hyperlink{namespace_random__example_a38569ed76a18c4bd200202051db0d16c}{detuning}},\mbox{\hyperlink{namespace_random__example_adee8599936ceed53aa20a1b37faffff0}{AC\+\_\+function}},\mbox{\hyperlink{namespace_random__example_a56e20e921fcace1b196790bca8ca4f39}{noise}})
+\item 
+\mbox{\hyperlink{namespace_random__example_a6832428f0615f1f98c8186258b473ea0}{observables}} = c13\+\_\+spins.\+SP\+\_\+observable(\mbox{[}\textquotesingle{}x\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_random__example_ad2fb730a60bdfa87b3c56d0d7a560e2b}{psi\+\_\+i}} = c13\+\_\+spins.\+initial\+\_\+state(\textquotesingle{}x\textquotesingle{})
+\item 
+dictionary \mbox{\hyperlink{namespace_random__example_aa4afc6053b67aff7b2c648bca27b1684}{description}}
+\item 
+int \mbox{\hyperlink{namespace_random__example_a1db4a78e52b12ca20b7d593e255aeb83}{steps}} = 200
+\item 
+\mbox{\hyperlink{namespace_random__example_ab990886abecda0328cef03e3785fc480}{times}}
+\item 
+\mbox{\hyperlink{namespace_random__example_a0251fd2006ac170397fb83fa47bbe430}{save\+\_\+every}}
+\item 
+\mbox{\hyperlink{namespace_random__example_afc91df7edb56fbbbb7360c8209c4b711}{folder}}
+\item 
+\mbox{\hyperlink{namespace_random__example_a3b958346f4ba207808ee6563ad31a04c}{extra\+\_\+save\+\_\+parameters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_random__example_a42f59a0d7100f0c02e7d41637c84f7f9}\label{namespace_random__example_a42f59a0d7100f0c02e7d41637c84f7f9}} 
+\index{Random\_example@{Random\_example}!func@{func}}
+\index{func@{func}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily def Random\+\_\+example.\+func (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{w }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_random__example_adee8599936ceed53aa20a1b37faffff0}\label{namespace_random__example_adee8599936ceed53aa20a1b37faffff0}} 
+\index{Random\_example@{Random\_example}!AC\_function@{AC\_function}}
+\index{AC\_function@{AC\_function}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{AC\_function}{AC\_function}}
+{\footnotesize\ttfamily list Random\+\_\+example.\+AC\+\_\+function = \mbox{[}\mbox{\hyperlink{namespace_random__example_a42f59a0d7100f0c02e7d41637c84f7f9}{func}},2$\ast$np.\+pi/(0.\+5+0.\+2+0.\+1)\mbox{]}}
+
+\mbox{\Hypertarget{namespace_random__example_a902e610b56247e0234c682fe937a9b91}\label{namespace_random__example_a902e610b56247e0234c682fe937a9b91}} 
+\index{Random\_example@{Random\_example}!B\_field\_dir@{B\_field\_dir}}
+\index{B\_field\_dir@{B\_field\_dir}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{B\_field\_dir}{B\_field\_dir}}
+{\footnotesize\ttfamily string Random\+\_\+example.\+B\+\_\+field\+\_\+dir = \textquotesingle{}z\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_random__example_a02b181afecaae6313a2e9b048d4631e2}\label{namespace_random__example_a02b181afecaae6313a2e9b048d4631e2}} 
+\index{Random\_example@{Random\_example}!c13\_dynamics@{c13\_dynamics}}
+\index{c13\_dynamics@{c13\_dynamics}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{c13\_dynamics}{c13\_dynamics}}
+{\footnotesize\ttfamily Random\+\_\+example.\+c13\+\_\+dynamics = qnv.\+NV\+\_\+dynamics(\mbox{\hyperlink{namespace_random__example_a716bbeb83175da64dca96f1ec8bc5706}{c13\+\_\+spins}},\mbox{\hyperlink{namespace_random__example_ae5bd37ae506a6919ad186cc7d625f184}{rabi\+\_\+freq}},\mbox{\hyperlink{namespace_random__example_afde9b74f08942ca451d4a9210514a21e}{kick\+\_\+building\+\_\+blocks}},\mbox{\hyperlink{namespace_random__example_a38569ed76a18c4bd200202051db0d16c}{detuning}},\mbox{\hyperlink{namespace_random__example_adee8599936ceed53aa20a1b37faffff0}{AC\+\_\+function}},\mbox{\hyperlink{namespace_random__example_a56e20e921fcace1b196790bca8ca4f39}{noise}})}
+
+\mbox{\Hypertarget{namespace_random__example_a716bbeb83175da64dca96f1ec8bc5706}\label{namespace_random__example_a716bbeb83175da64dca96f1ec8bc5706}} 
+\index{Random\_example@{Random\_example}!c13\_spins@{c13\_spins}}
+\index{c13\_spins@{c13\_spins}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{c13\_spins}{c13\_spins}}
+{\footnotesize\ttfamily Random\+\_\+example.\+c13\+\_\+spins = qnv.\+NV\+\_\+system.\+default(\mbox{\hyperlink{namespace_random__example_a885c1a72e4d78f2f5e9ccced506e7c47}{L}})}
+
+\mbox{\Hypertarget{namespace_random__example_aa4afc6053b67aff7b2c648bca27b1684}\label{namespace_random__example_aa4afc6053b67aff7b2c648bca27b1684}} 
+\index{Random\_example@{Random\_example}!description@{description}}
+\index{description@{description}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily dictionary Random\+\_\+example.\+description}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{\textcolor{stringliteral}{'description'}:\textcolor{stringliteral}{"{}We store x,y and z magentization,the sequences is given by\(\backslash\)}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{                              [[('x',0.5),('dd',1.0),('y',0.4)],4], [[('z',0.5)],2]"{}},}
+\DoxyCodeLine{3                \textcolor{stringliteral}{'comment'}:\textcolor{stringliteral}{'this is the first data set of the series'}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_random__example_a38569ed76a18c4bd200202051db0d16c}\label{namespace_random__example_a38569ed76a18c4bd200202051db0d16c}} 
+\index{Random\_example@{Random\_example}!detuning@{detuning}}
+\index{detuning@{detuning}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{detuning}{detuning}}
+{\footnotesize\ttfamily Random\+\_\+example.\+detuning = None}
+
+\mbox{\Hypertarget{namespace_random__example_a3b958346f4ba207808ee6563ad31a04c}\label{namespace_random__example_a3b958346f4ba207808ee6563ad31a04c}} 
+\index{Random\_example@{Random\_example}!extra\_save\_parameters@{extra\_save\_parameters}}
+\index{extra\_save\_parameters@{extra\_save\_parameters}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{extra\_save\_parameters}{extra\_save\_parameters}}
+{\footnotesize\ttfamily Random\+\_\+example.\+extra\+\_\+save\+\_\+parameters}
+
+\mbox{\Hypertarget{namespace_random__example_afc91df7edb56fbbbb7360c8209c4b711}\label{namespace_random__example_afc91df7edb56fbbbb7360c8209c4b711}} 
+\index{Random\_example@{Random\_example}!folder@{folder}}
+\index{folder@{folder}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{folder}{folder}}
+{\footnotesize\ttfamily Random\+\_\+example.\+folder}
+
+\mbox{\Hypertarget{namespace_random__example_afde9b74f08942ca451d4a9210514a21e}\label{namespace_random__example_afde9b74f08942ca451d4a9210514a21e}} 
+\index{Random\_example@{Random\_example}!kick\_building\_blocks@{kick\_building\_blocks}}
+\index{kick\_building\_blocks@{kick\_building\_blocks}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{kick\_building\_blocks}{kick\_building\_blocks}}
+{\footnotesize\ttfamily list Random\+\_\+example.\+kick\+\_\+building\+\_\+blocks = \mbox{[} \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1\mbox{]}, \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2),(\textquotesingle{}x\textquotesingle{},0.\+5)\mbox{]},1 \mbox{]} \mbox{]}}
+
+\mbox{\Hypertarget{namespace_random__example_a885c1a72e4d78f2f5e9ccced506e7c47}\label{namespace_random__example_a885c1a72e4d78f2f5e9ccced506e7c47}} 
+\index{Random\_example@{Random\_example}!L@{L}}
+\index{L@{L}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily int Random\+\_\+example.\+L = 12}
+
+\mbox{\Hypertarget{namespace_random__example_ad8bc7fa75eec2d6a8a4c0d50cd3b2148}\label{namespace_random__example_ad8bc7fa75eec2d6a8a4c0d50cd3b2148}} 
+\index{Random\_example@{Random\_example}!max\_r@{max\_r}}
+\index{max\_r@{max\_r}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{max\_r}{max\_r}}
+{\footnotesize\ttfamily float Random\+\_\+example.\+max\+\_\+r = 1.\+1}
+
+\mbox{\Hypertarget{namespace_random__example_ab60b7adb7eee22f683f166996ac4d43c}\label{namespace_random__example_ab60b7adb7eee22f683f166996ac4d43c}} 
+\index{Random\_example@{Random\_example}!min\_r@{min\_r}}
+\index{min\_r@{min\_r}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{min\_r}{min\_r}}
+{\footnotesize\ttfamily float Random\+\_\+example.\+min\+\_\+r = 0.\+9}
+
+\mbox{\Hypertarget{namespace_random__example_a56e20e921fcace1b196790bca8ca4f39}\label{namespace_random__example_a56e20e921fcace1b196790bca8ca4f39}} 
+\index{Random\_example@{Random\_example}!noise@{noise}}
+\index{noise@{noise}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{noise}{noise}}
+{\footnotesize\ttfamily float Random\+\_\+example.\+noise = 0.\+05}
+
+\mbox{\Hypertarget{namespace_random__example_a6832428f0615f1f98c8186258b473ea0}\label{namespace_random__example_a6832428f0615f1f98c8186258b473ea0}} 
+\index{Random\_example@{Random\_example}!observables@{observables}}
+\index{observables@{observables}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{observables}{observables}}
+{\footnotesize\ttfamily Random\+\_\+example.\+observables = c13\+\_\+spins.\+SP\+\_\+observable(\mbox{[}\textquotesingle{}x\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespace_random__example_ad2fb730a60bdfa87b3c56d0d7a560e2b}\label{namespace_random__example_ad2fb730a60bdfa87b3c56d0d7a560e2b}} 
+\index{Random\_example@{Random\_example}!psi\_i@{psi\_i}}
+\index{psi\_i@{psi\_i}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{psi\_i}{psi\_i}}
+{\footnotesize\ttfamily Random\+\_\+example.\+psi\+\_\+i = c13\+\_\+spins.\+initial\+\_\+state(\textquotesingle{}x\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_random__example_ae5bd37ae506a6919ad186cc7d625f184}\label{namespace_random__example_ae5bd37ae506a6919ad186cc7d625f184}} 
+\index{Random\_example@{Random\_example}!rabi\_freq@{rabi\_freq}}
+\index{rabi\_freq@{rabi\_freq}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{rabi\_freq}{rabi\_freq}}
+{\footnotesize\ttfamily int Random\+\_\+example.\+rabi\+\_\+freq = np.\+pi/2}
+
+\mbox{\Hypertarget{namespace_random__example_a0251fd2006ac170397fb83fa47bbe430}\label{namespace_random__example_a0251fd2006ac170397fb83fa47bbe430}} 
+\index{Random\_example@{Random\_example}!save\_every@{save\_every}}
+\index{save\_every@{save\_every}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{save\_every}{save\_every}}
+{\footnotesize\ttfamily Random\+\_\+example.\+save\+\_\+every}
+
+\mbox{\Hypertarget{namespace_random__example_aa289535ce737316532033ed814f0c86c}\label{namespace_random__example_aa289535ce737316532033ed814f0c86c}} 
+\index{Random\_example@{Random\_example}!seed@{seed}}
+\index{seed@{seed}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Random\+\_\+example.\+seed = 1}
+
+\mbox{\Hypertarget{namespace_random__example_a1db4a78e52b12ca20b7d593e255aeb83}\label{namespace_random__example_a1db4a78e52b12ca20b7d593e255aeb83}} 
+\index{Random\_example@{Random\_example}!steps@{steps}}
+\index{steps@{steps}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily int Random\+\_\+example.\+steps = 200}
+
+\mbox{\Hypertarget{namespace_random__example_ab990886abecda0328cef03e3785fc480}\label{namespace_random__example_ab990886abecda0328cef03e3785fc480}} 
+\index{Random\_example@{Random\_example}!times@{times}}
+\index{times@{times}!Random\_example@{Random\_example}}
+\doxysubsubsection{\texorpdfstring{times}{times}}
+{\footnotesize\ttfamily Random\+\_\+example.\+times}
+

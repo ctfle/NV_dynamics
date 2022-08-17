@@ -1,0 +1,233 @@
+\hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system}{}\doxysection{QNV4py.\+nv\+\_\+system.\+NV\+\_\+system Class Reference}
+\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system}\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+
+
+Sets up a random graph of L spins where each spin has a min\+\_\+dist to all other spins and is at least connected to one other spin at no further than max\+\_\+dist.  
+
+
+Inheritance diagram for QNV4py.\+nv\+\_\+system.\+NV\+\_\+system\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_n_v4py_1_1nv__system_1_1_n_v__system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a9e68b65c25ca929728418a1835867504}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af351b32986338c7815aa18df89cf730e}{B\+\_\+field\+\_\+dir}}, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a12f77e9fe7b46bc211302c2aec5d7d98}{L}}, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a2eb90fa1607665435137d08a46907102}{min\+\_\+dist}}, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a3bf1367ae242f79c6d98899566efa28b}{max\+\_\+dist}}, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}{seed}}, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac101c0d16d3b345b8ba5f519f7cc90fd}{scaling\+\_\+factor}}=0.\+1)
+\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a0b9e23c20a693989c87f6a1512a9d5d2}{default}} (cls, \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a12f77e9fe7b46bc211302c2aec5d7d98}{L}})
+\begin{DoxyCompactList}\small\item\em Classmethod to initialize the system with default parameters\+: B\+\_\+field\+\_\+dir=\textquotesingle{}z\textquotesingle{} min\+\_\+dist=0.\+9 max\+\_\+dist=1.\+1 seed=1 scaling\+\_\+factor=1.\+0. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ab5e1202ff8e92525accbc6cee22ff3bb}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Print function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}{initial\+\_\+state}} (self, direction)
+\begin{DoxyCompactList}\small\item\em Construct an initial state polarized along direction. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a8573f203706d61b519468163bf47a5e5}{SP\+\_\+observable}} (self, directions)
+\begin{DoxyCompactList}\small\item\em Construct single partcile observables according to directions. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_aa9717ad0fc8237e7b19900eef7e71dbf}{spectrum}} (self)
+\begin{DoxyCompactList}\small\item\em Computes the spectrum of H\+\_\+dd. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}{seed}}
+\begin{DoxyCompactList}\small\item\em seed value for the generation of random numbers during the build of the random graph of $ C^{13} $ spins \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af351b32986338c7815aa18df89cf730e}{B\+\_\+field\+\_\+dir}}
+\begin{DoxyCompactList}\small\item\em B\+\_\+field\+\_\+dir string, direction of the external B-\/field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a2eb90fa1607665435137d08a46907102}{min\+\_\+dist}}
+\begin{DoxyCompactList}\small\item\em min\+\_\+dist minimum distance allowed between two $ C^{13} $ spins \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a3bf1367ae242f79c6d98899566efa28b}{max\+\_\+dist}}
+\begin{DoxyCompactList}\small\item\em max\+\_\+dist maximum nearest neighbor distance between $ C^{13} $ spins \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac101c0d16d3b345b8ba5f519f7cc90fd}{scaling\+\_\+factor}}
+\begin{DoxyCompactList}\small\item\em scaling\+\_\+factor parameter to scale the importance of single particle terms due to the field generated from the NV center, default is 1.\+0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a12f77e9fe7b46bc211302c2aec5d7d98}{L}}
+\begin{DoxyCompactList}\small\item\em system size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af8a81ce93e3e658d591ecfea5119d4b9}{spin\+\_\+positions}}
+\begin{DoxyCompactList}\small\item\em spin\+\_\+positions Positions of spins on the random graph \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a1c52441d6a55f5bb2d96fc1d190faf3a}{basis}}
+\begin{DoxyCompactList}\small\item\em Qu\+Spin basis object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_aaaf53eaee85dc3b18ed56855f0e1f77c}{energy\+\_\+scale}}
+\begin{DoxyCompactList}\small\item\em energy scale J of random graph of $C^{13}$ spins (without single particle terms! Those are normalized with J and scaled with scaling\+\_\+factor). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a593e60de62c11d923f9ecd80f878c9a6}{H\+\_\+dd}}
+\begin{DoxyCompactList}\small\item\em dipolar Hamiltonian corresponding to the random graph (including single particle terms) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets up a random graph of L spins where each spin has a min\+\_\+dist to all other spins and is at least connected to one other spin at no further than max\+\_\+dist. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a9e68b65c25ca929728418a1835867504}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a9e68b65c25ca929728418a1835867504}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{B\+\_\+field\+\_\+dir,  }\item[{}]{L,  }\item[{}]{min\+\_\+dist,  }\item[{}]{max\+\_\+dist,  }\item[{}]{seed,  }\item[{}]{scaling\+\_\+factor = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_q_n_v4py_1_1nv__dynamics_1_1_n_v__dynamics_a87755253b3bb86c0fcb4470e07f49b4c}{QNV4py.\+nv\+\_\+dynamics.\+NV\+\_\+dynamics}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ab5e1202ff8e92525accbc6cee22ff3bb}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ab5e1202ff8e92525accbc6cee22ff3bb}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Print function. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a0b9e23c20a693989c87f6a1512a9d5d2}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a0b9e23c20a693989c87f6a1512a9d5d2}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!default@{default}}
+\index{default@{default}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{default()}{default()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+default (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{L }\end{DoxyParamCaption})}
+
+
+
+Classmethod to initialize the system with default parameters\+: B\+\_\+field\+\_\+dir=\textquotesingle{}z\textquotesingle{} min\+\_\+dist=0.\+9 max\+\_\+dist=1.\+1 seed=1 scaling\+\_\+factor=1.\+0. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a001dabafa044cb00316b7267644b88cb}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!initial\_state@{initial\_state}}
+\index{initial\_state@{initial\_state}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{initial\_state()}{initial\_state()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+initial\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{direction }\end{DoxyParamCaption})}
+
+
+
+Construct an initial state polarized along direction. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a8573f203706d61b519468163bf47a5e5}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a8573f203706d61b519468163bf47a5e5}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!SP\_observable@{SP\_observable}}
+\index{SP\_observable@{SP\_observable}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{SP\_observable()}{SP\_observable()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+SP\+\_\+observable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{directions }\end{DoxyParamCaption})}
+
+
+
+Construct single partcile observables according to directions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directions} & list of char. Char must be \textquotesingle{}x\textquotesingle{}, \textquotesingle{}y\textquotesingle{}, \textquotesingle{}z\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_aa9717ad0fc8237e7b19900eef7e71dbf}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_aa9717ad0fc8237e7b19900eef7e71dbf}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!spectrum@{spectrum}}
+\index{spectrum@{spectrum}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{spectrum()}{spectrum()}}
+{\footnotesize\ttfamily def QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+spectrum (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Computes the spectrum of H\+\_\+dd. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af351b32986338c7815aa18df89cf730e}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af351b32986338c7815aa18df89cf730e}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!B\_field\_dir@{B\_field\_dir}}
+\index{B\_field\_dir@{B\_field\_dir}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{B\_field\_dir}{B\_field\_dir}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+B\+\_\+field\+\_\+dir}
+
+
+
+B\+\_\+field\+\_\+dir string, direction of the external B-\/field. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a1c52441d6a55f5bb2d96fc1d190faf3a}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a1c52441d6a55f5bb2d96fc1d190faf3a}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!basis@{basis}}
+\index{basis@{basis}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{basis}{basis}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+basis}
+
+
+
+Qu\+Spin basis object. 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_aaaf53eaee85dc3b18ed56855f0e1f77c}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_aaaf53eaee85dc3b18ed56855f0e1f77c}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!energy\_scale@{energy\_scale}}
+\index{energy\_scale@{energy\_scale}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{energy\_scale}{energy\_scale}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+energy\+\_\+scale}
+
+
+
+energy scale J of random graph of $C^{13}$ spins (without single particle terms! Those are normalized with J and scaled with scaling\+\_\+factor). 
+
+Computed from the free induction decay of an initially $ \hat{x} $-\/polarized (pure) state. \mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a593e60de62c11d923f9ecd80f878c9a6}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a593e60de62c11d923f9ecd80f878c9a6}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!H\_dd@{H\_dd}}
+\index{H\_dd@{H\_dd}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{H\_dd}{H\_dd}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+H\+\_\+dd}
+
+
+
+dipolar Hamiltonian corresponding to the random graph (including single particle terms) 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a12f77e9fe7b46bc211302c2aec5d7d98}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a12f77e9fe7b46bc211302c2aec5d7d98}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!L@{L}}
+\index{L@{L}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+L}
+
+
+
+system size 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a3bf1367ae242f79c6d98899566efa28b}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a3bf1367ae242f79c6d98899566efa28b}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!max\_dist@{max\_dist}}
+\index{max\_dist@{max\_dist}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{max\_dist}{max\_dist}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+max\+\_\+dist}
+
+
+
+max\+\_\+dist maximum nearest neighbor distance between $ C^{13} $ spins 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a2eb90fa1607665435137d08a46907102}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_a2eb90fa1607665435137d08a46907102}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!min\_dist@{min\_dist}}
+\index{min\_dist@{min\_dist}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{min\_dist}{min\_dist}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+min\+\_\+dist}
+
+
+
+min\+\_\+dist minimum distance allowed between two $ C^{13} $ spins 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac101c0d16d3b345b8ba5f519f7cc90fd}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac101c0d16d3b345b8ba5f519f7cc90fd}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!scaling\_factor@{scaling\_factor}}
+\index{scaling\_factor@{scaling\_factor}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{scaling\_factor}{scaling\_factor}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+scaling\+\_\+factor}
+
+
+
+scaling\+\_\+factor parameter to scale the importance of single particle terms due to the field generated from the NV center, default is 1.\+0 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_ac3bd2a09218cb58b7e3c223da3ed9ce9}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!seed@{seed}}
+\index{seed@{seed}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+seed}
+
+
+
+seed value for the generation of random numbers during the build of the random graph of $ C^{13} $ spins 
+
+\mbox{\Hypertarget{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af8a81ce93e3e658d591ecfea5119d4b9}\label{class_q_n_v4py_1_1nv__system_1_1_n_v__system_af8a81ce93e3e658d591ecfea5119d4b9}} 
+\index{QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}!spin\_positions@{spin\_positions}}
+\index{spin\_positions@{spin\_positions}!QNV4py.nv\_system.NV\_system@{QNV4py.nv\_system.NV\_system}}
+\doxysubsubsection{\texorpdfstring{spin\_positions}{spin\_positions}}
+{\footnotesize\ttfamily QNV4py.\+nv\+\_\+system.\+NV\+\_\+system.\+spin\+\_\+positions}
+
+
+
+spin\+\_\+positions Positions of spins on the random graph 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/christoph/nv-\/center/\+QNV4py/\+QNV4py/\mbox{\hyperlink{nv__system_8py}{nv\+\_\+system.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{_a_r_p_example_example6}{}\doxysubsection{Prototype example to illustrate a time dependent sequence}\label{_a_r_p_example_example6}
+Below we simulate a Adiabatic Rapid passage by changing the value of the x-\/kick linearly with time
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{import} os, sys}
+\DoxyCodeLine{os.environ[\textcolor{stringliteral}{'OMP\_NUM\_THREADS'}] = \textcolor{stringliteral}{'4'}}
+\DoxyCodeLine{\textcolor{keyword}{import} numpy \textcolor{keyword}{as} np}
+\DoxyCodeLine{\textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt}
+\DoxyCodeLine{\textcolor{keyword}{import} QNV4py \textcolor{keyword}{as} qnv}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} QNV4py \textcolor{keyword}{as} qnv}
+\DoxyCodeLine{}
+\DoxyCodeLine{L = 12}
+\DoxyCodeLine{min\_r = 0.9}
+\DoxyCodeLine{max\_r = 1.1}
+\DoxyCodeLine{seed = 1}
+\DoxyCodeLine{B\_field\_dir = \textcolor{stringliteral}{'z'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{detuning = \textcolor{keywordtype}{None} \textcolor{comment}{\#0.2}}
+\DoxyCodeLine{rabi\_freq = np.pi/2}
+\DoxyCodeLine{noise = 0.05}
+\DoxyCodeLine{AC\_function = \textcolor{keywordtype}{None} }
+\DoxyCodeLine{}
+\DoxyCodeLine{steps = 1000}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# building blocks of the drive}}
+\DoxyCodeLine{kick\_building\_blocks = [ [[(\textcolor{stringliteral}{'dd'},0.2)],1],  [[(\textcolor{stringliteral}{'x'},0.9)],1]  ]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# define a function that describes the time dependence of the kick time}}
+\DoxyCodeLine{\textcolor{comment}{\# here we chose a linear ramp}}
+\DoxyCodeLine{\textcolor{keyword}{def }\mbox{\hyperlink{namespace_time__dependent__example_af4f1a2a2168e4ff582b1f7d63db2657f}{function}}(init\_val, n, steps):}
+\DoxyCodeLine{   \textcolor{keywordflow}{return} init\_val + 0.2*n / steps}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# NV\_sysgem objcet}}
+\DoxyCodeLine{c13\_spins = qnv.NV\_system.default(L)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# NV\_dynamics object}}
+\DoxyCodeLine{c13\_dynamics = qnv.NV\_dynamics(c13\_spins,rabi\_freq,kick\_building\_blocks,noise=noise)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# define some single particle observables to be measured}}
+\DoxyCodeLine{observables = c13\_spins.SP\_observable([\textcolor{stringliteral}{'x'}])}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# define an initial state}}
+\DoxyCodeLine{psi\_i = c13\_spins.initial\_state(\textcolor{stringliteral}{'x'})}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# some extra metadata that is stored with the data}}
+\DoxyCodeLine{description = \{\textcolor{stringliteral}{'description'}:\textcolor{stringliteral}{"{}We store x,y and z magentization,the sequences is given by\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{                              [[('x',0.5),('dd',1.0),('y',0.4)],4], [[('z',0.5)],2]"{}},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'comment'}:\textcolor{stringliteral}{'this is the first data set of the series'}\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{observables, times = c13\_dynamics.evolve\_time\_dependent(psi\_i,}
+\DoxyCodeLine{                                                   steps,}
+\DoxyCodeLine{                                                   observables,}
+\DoxyCodeLine{                                                   [\textcolor{keywordtype}{None},[function,steps]],}
+\DoxyCodeLine{                                                   \textcolor{stringliteral}{'example\_file'},}
+\DoxyCodeLine{                                                   save\_every=50,}
+\DoxyCodeLine{                                                   folder=\textcolor{stringliteral}{'example\_data\_time\_dep'},}
+\DoxyCodeLine{                                                   extra\_save\_parameters=description)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\# plot the results}}
+\DoxyCodeLine{plt.plot(times,observables[0],\textcolor{stringliteral}{'-\/'})}
+\DoxyCodeLine{plt.xscale(\textcolor{stringliteral}{'log'})}
+\DoxyCodeLine{plt.show()}
+
+\end{DoxyCode}
+ 

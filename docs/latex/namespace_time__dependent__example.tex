@@ -1,0 +1,189 @@
+\hypertarget{namespace_time__dependent__example}{}\doxysection{Time\+\_\+dependent\+\_\+example Namespace Reference}
+\label{namespace_time__dependent__example}\index{Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_time__dependent__example_af4f1a2a2168e4ff582b1f7d63db2657f}{function}} (init\+\_\+val, n, \mbox{\hyperlink{namespace_time__dependent__example_ab9284a17d2f8c58b34c7800029ff8379}{steps}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_time__dependent__example_a8781c37986b057ad3706e64574205be1}{L}} = 12
+\item 
+float \mbox{\hyperlink{namespace_time__dependent__example_a1af9dedc9aebb824d67e237c099f9a6b}{min\+\_\+r}} = 0.\+9
+\item 
+float \mbox{\hyperlink{namespace_time__dependent__example_a6eaf0668ed7c0e1be3033a7809ad8628}{max\+\_\+r}} = 1.\+1
+\item 
+int \mbox{\hyperlink{namespace_time__dependent__example_af210e1bdb966845fc6e2138f20a45874}{seed}} = 1
+\item 
+string \mbox{\hyperlink{namespace_time__dependent__example_aca8bfe1a7fe9e3c7304a89babc2956fa}{B\+\_\+field\+\_\+dir}} = \textquotesingle{}z\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_ae2dbdc9470e27f1d3b2c949a83f626b7}{detuning}} = None
+\item 
+int \mbox{\hyperlink{namespace_time__dependent__example_a16522b686d73485f0467fa7b2254275e}{rabi\+\_\+freq}} = np.\+pi/2
+\item 
+float \mbox{\hyperlink{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}{noise}} = 0.\+05
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_aa8bf39dd6a4bbf76b2ed32749450775e}{AC\+\_\+function}} = None
+\item 
+int \mbox{\hyperlink{namespace_time__dependent__example_ab9284a17d2f8c58b34c7800029ff8379}{steps}} = 1000
+\item 
+list \mbox{\hyperlink{namespace_time__dependent__example_a71cf438730d967b455cf1fe29bb60c9b}{kick\+\_\+building\+\_\+blocks}} = \mbox{[} \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2)\mbox{]},1\mbox{]}, \mbox{[}\mbox{[}(\textquotesingle{}x\textquotesingle{},0.\+9)\mbox{]},1\mbox{]} \mbox{]}
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_a4787d074a59cccdaea5fc4fe92bbf587}{c13\+\_\+spins}} = qnv.\+NV\+\_\+system.\+default(\mbox{\hyperlink{namespace_time__dependent__example_a8781c37986b057ad3706e64574205be1}{L}})
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_a94665f451187e527f07100197d34caf7}{c13\+\_\+dynamics}} = qnv.\+NV\+\_\+dynamics(\mbox{\hyperlink{namespace_time__dependent__example_a4787d074a59cccdaea5fc4fe92bbf587}{c13\+\_\+spins}},\mbox{\hyperlink{namespace_time__dependent__example_a16522b686d73485f0467fa7b2254275e}{rabi\+\_\+freq}},\mbox{\hyperlink{namespace_time__dependent__example_a71cf438730d967b455cf1fe29bb60c9b}{kick\+\_\+building\+\_\+blocks}},\mbox{\hyperlink{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}{noise}}=\mbox{\hyperlink{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}{noise}})
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_a244060ad07e17c8b5432ed89f98740d7}{observables}} = c13\+\_\+spins.\+SP\+\_\+observable(\mbox{[}\textquotesingle{}x\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_ae53920bf3806b73a6944aa520012f98e}{psi\+\_\+i}} = c13\+\_\+spins.\+initial\+\_\+state(\textquotesingle{}x\textquotesingle{})
+\item 
+dictionary \mbox{\hyperlink{namespace_time__dependent__example_a241de3135b6469f704036a4bfc0b9d2b}{description}}
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_a7e76f37edbc06987fbbca8af66b96b3c}{times}}
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_a57f0c5e6cccec54e28c5532a116d0c82}{save\+\_\+every}}
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_ae99fa7884c19d0be203b3736616f00f8}{folder}}
+\item 
+\mbox{\hyperlink{namespace_time__dependent__example_a79f03ac2bd4fe0cc91544dbdee5b5d36}{extra\+\_\+save\+\_\+parameters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_time__dependent__example_af4f1a2a2168e4ff582b1f7d63db2657f}\label{namespace_time__dependent__example_af4f1a2a2168e4ff582b1f7d63db2657f}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!function@{function}}
+\index{function@{function}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily def Time\+\_\+dependent\+\_\+example.\+function (\begin{DoxyParamCaption}\item[{}]{init\+\_\+val,  }\item[{}]{n,  }\item[{}]{steps }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_time__dependent__example_aa8bf39dd6a4bbf76b2ed32749450775e}\label{namespace_time__dependent__example_aa8bf39dd6a4bbf76b2ed32749450775e}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!AC\_function@{AC\_function}}
+\index{AC\_function@{AC\_function}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{AC\_function}{AC\_function}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+AC\+\_\+function = None}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_aca8bfe1a7fe9e3c7304a89babc2956fa}\label{namespace_time__dependent__example_aca8bfe1a7fe9e3c7304a89babc2956fa}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!B\_field\_dir@{B\_field\_dir}}
+\index{B\_field\_dir@{B\_field\_dir}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{B\_field\_dir}{B\_field\_dir}}
+{\footnotesize\ttfamily string Time\+\_\+dependent\+\_\+example.\+B\+\_\+field\+\_\+dir = \textquotesingle{}z\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a94665f451187e527f07100197d34caf7}\label{namespace_time__dependent__example_a94665f451187e527f07100197d34caf7}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!c13\_dynamics@{c13\_dynamics}}
+\index{c13\_dynamics@{c13\_dynamics}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{c13\_dynamics}{c13\_dynamics}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+c13\+\_\+dynamics = qnv.\+NV\+\_\+dynamics(\mbox{\hyperlink{namespace_time__dependent__example_a4787d074a59cccdaea5fc4fe92bbf587}{c13\+\_\+spins}},\mbox{\hyperlink{namespace_time__dependent__example_a16522b686d73485f0467fa7b2254275e}{rabi\+\_\+freq}},\mbox{\hyperlink{namespace_time__dependent__example_a71cf438730d967b455cf1fe29bb60c9b}{kick\+\_\+building\+\_\+blocks}},\mbox{\hyperlink{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}{noise}}=\mbox{\hyperlink{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}{noise}})}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a4787d074a59cccdaea5fc4fe92bbf587}\label{namespace_time__dependent__example_a4787d074a59cccdaea5fc4fe92bbf587}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!c13\_spins@{c13\_spins}}
+\index{c13\_spins@{c13\_spins}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{c13\_spins}{c13\_spins}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+c13\+\_\+spins = qnv.\+NV\+\_\+system.\+default(\mbox{\hyperlink{namespace_time__dependent__example_a8781c37986b057ad3706e64574205be1}{L}})}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a241de3135b6469f704036a4bfc0b9d2b}\label{namespace_time__dependent__example_a241de3135b6469f704036a4bfc0b9d2b}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!description@{description}}
+\index{description@{description}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily dictionary Time\+\_\+dependent\+\_\+example.\+description}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{\textcolor{stringliteral}{'description'}:\textcolor{stringliteral}{"{}We store x,y and z magentization,the sequences is given by\(\backslash\)}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{                              [[('x',0.5),('dd',1.0),('y',0.4)],4], [[('z',0.5)],2]"{}},}
+\DoxyCodeLine{3                \textcolor{stringliteral}{'comment'}:\textcolor{stringliteral}{'this is the first data set of the series'}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_time__dependent__example_ae2dbdc9470e27f1d3b2c949a83f626b7}\label{namespace_time__dependent__example_ae2dbdc9470e27f1d3b2c949a83f626b7}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!detuning@{detuning}}
+\index{detuning@{detuning}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{detuning}{detuning}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+detuning = None}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a79f03ac2bd4fe0cc91544dbdee5b5d36}\label{namespace_time__dependent__example_a79f03ac2bd4fe0cc91544dbdee5b5d36}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!extra\_save\_parameters@{extra\_save\_parameters}}
+\index{extra\_save\_parameters@{extra\_save\_parameters}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{extra\_save\_parameters}{extra\_save\_parameters}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+extra\+\_\+save\+\_\+parameters}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_ae99fa7884c19d0be203b3736616f00f8}\label{namespace_time__dependent__example_ae99fa7884c19d0be203b3736616f00f8}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!folder@{folder}}
+\index{folder@{folder}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{folder}{folder}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+folder}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a71cf438730d967b455cf1fe29bb60c9b}\label{namespace_time__dependent__example_a71cf438730d967b455cf1fe29bb60c9b}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!kick\_building\_blocks@{kick\_building\_blocks}}
+\index{kick\_building\_blocks@{kick\_building\_blocks}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{kick\_building\_blocks}{kick\_building\_blocks}}
+{\footnotesize\ttfamily list Time\+\_\+dependent\+\_\+example.\+kick\+\_\+building\+\_\+blocks = \mbox{[} \mbox{[}\mbox{[}(\textquotesingle{}dd\textquotesingle{},0.\+2)\mbox{]},1\mbox{]}, \mbox{[}\mbox{[}(\textquotesingle{}x\textquotesingle{},0.\+9)\mbox{]},1\mbox{]} \mbox{]}}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a8781c37986b057ad3706e64574205be1}\label{namespace_time__dependent__example_a8781c37986b057ad3706e64574205be1}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!L@{L}}
+\index{L@{L}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily int Time\+\_\+dependent\+\_\+example.\+L = 12}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a6eaf0668ed7c0e1be3033a7809ad8628}\label{namespace_time__dependent__example_a6eaf0668ed7c0e1be3033a7809ad8628}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!max\_r@{max\_r}}
+\index{max\_r@{max\_r}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{max\_r}{max\_r}}
+{\footnotesize\ttfamily float Time\+\_\+dependent\+\_\+example.\+max\+\_\+r = 1.\+1}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a1af9dedc9aebb824d67e237c099f9a6b}\label{namespace_time__dependent__example_a1af9dedc9aebb824d67e237c099f9a6b}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!min\_r@{min\_r}}
+\index{min\_r@{min\_r}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{min\_r}{min\_r}}
+{\footnotesize\ttfamily float Time\+\_\+dependent\+\_\+example.\+min\+\_\+r = 0.\+9}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}\label{namespace_time__dependent__example_af2d96b929aaa7edf034ecd4a0976006a}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!noise@{noise}}
+\index{noise@{noise}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{noise}{noise}}
+{\footnotesize\ttfamily float Time\+\_\+dependent\+\_\+example.\+noise = 0.\+05}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a244060ad07e17c8b5432ed89f98740d7}\label{namespace_time__dependent__example_a244060ad07e17c8b5432ed89f98740d7}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!observables@{observables}}
+\index{observables@{observables}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{observables}{observables}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+observables = c13\+\_\+spins.\+SP\+\_\+observable(\mbox{[}\textquotesingle{}x\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_ae53920bf3806b73a6944aa520012f98e}\label{namespace_time__dependent__example_ae53920bf3806b73a6944aa520012f98e}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!psi\_i@{psi\_i}}
+\index{psi\_i@{psi\_i}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{psi\_i}{psi\_i}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+psi\+\_\+i = c13\+\_\+spins.\+initial\+\_\+state(\textquotesingle{}x\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a16522b686d73485f0467fa7b2254275e}\label{namespace_time__dependent__example_a16522b686d73485f0467fa7b2254275e}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!rabi\_freq@{rabi\_freq}}
+\index{rabi\_freq@{rabi\_freq}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{rabi\_freq}{rabi\_freq}}
+{\footnotesize\ttfamily int Time\+\_\+dependent\+\_\+example.\+rabi\+\_\+freq = np.\+pi/2}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a57f0c5e6cccec54e28c5532a116d0c82}\label{namespace_time__dependent__example_a57f0c5e6cccec54e28c5532a116d0c82}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!save\_every@{save\_every}}
+\index{save\_every@{save\_every}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{save\_every}{save\_every}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+save\+\_\+every}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_af210e1bdb966845fc6e2138f20a45874}\label{namespace_time__dependent__example_af210e1bdb966845fc6e2138f20a45874}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!seed@{seed}}
+\index{seed@{seed}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Time\+\_\+dependent\+\_\+example.\+seed = 1}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_ab9284a17d2f8c58b34c7800029ff8379}\label{namespace_time__dependent__example_ab9284a17d2f8c58b34c7800029ff8379}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!steps@{steps}}
+\index{steps@{steps}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily int Time\+\_\+dependent\+\_\+example.\+steps = 1000}
+
+\mbox{\Hypertarget{namespace_time__dependent__example_a7e76f37edbc06987fbbca8af66b96b3c}\label{namespace_time__dependent__example_a7e76f37edbc06987fbbca8af66b96b3c}} 
+\index{Time\_dependent\_example@{Time\_dependent\_example}!times@{times}}
+\index{times@{times}!Time\_dependent\_example@{Time\_dependent\_example}}
+\doxysubsubsection{\texorpdfstring{times}{times}}
+{\footnotesize\ttfamily Time\+\_\+dependent\+\_\+example.\+times}
+
