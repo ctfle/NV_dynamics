@@ -18,7 +18,11 @@ hlp = Helper_funcs()
 
 
 
+<<<<<<< HEAD
 ## @mainpage Quantum Dynamics of Dipolar Coupled Nuclear Spins
+=======
+## @mainpage Quantum Dynamics in dipolar coupled nuclear spins
+>>>>>>> dac244c433243c7ca93805a76fcfd67867c6d362
 #  
 #  @brief Python package for (periodically) driven dipolar coupled \f$ C^{13} \f$ nuclear spins. 
 #  The package includes the class NV_system to create and design a system of dipolar coupled \f$ C^{13} \f$ spins
@@ -30,11 +34,23 @@ hlp = Helper_funcs()
 # - make it work on windows
 # 
 # @subsection intsall Installation via pip
+<<<<<<< HEAD
 # Download the master branch from https://github.com/ctfle/NV_dynamics and un-zip. Open a terminal window and navigate into the folder QNV4py. Type
+=======
+# Open a terminal window and navigate into the folder QNV4py. Type
+>>>>>>> dac244c433243c7ca93805a76fcfd67867c6d362
 #  ~~~~~~~~~~~~~{.py} 
 #  pip install . 
 #  ~~~~~~~~~~~~~
 #
+<<<<<<< HEAD
+=======
+# Alternatively: Open a terminal window, navigate into the folder QNV4py. Type
+#  ~~~~~~~~~~~~~{.py} 
+#  make install
+#  ~~~~~~~~~~~~~
+#
+>>>>>>> dac244c433243c7ca93805a76fcfd67867c6d362
 # To open the documentation file from the terminal: Open a terminal window and navigate to the folder QNV4py. Type
 #  ~~~~~~~~~~~~~{.py} 
 #  make show docu
@@ -48,13 +64,18 @@ hlp = Helper_funcs()
 # 
 # @subsection notes_examples How to use the code:
 # 
+<<<<<<< HEAD
 # Check out the example files (see sidebar)!
+=======
+# Check out the example files under 'Related Pages' (sidebar)!
+>>>>>>> dac244c433243c7ca93805a76fcfd67867c6d362
 # 
 # The code consists of two classes: NV_system, to construct a random graph of \f$ C^{13} \f$ atoms, 
 # and NV_dynamics to evolve in time with user defined sequence. To setup a working code, first you have to 
 # construct a NV_system object. Then, use it to build a NV_dynamics object. NV_system can be used with default parameter settings
 # (for example  <code> C13_object = NV_system.default(L) </code>), which builds the random graph with
 # default settings. An NV_dynamics object requires the following input: 
+<<<<<<< HEAD
 # 	- <code> nv_instance </code>, a NV_system object
 # 	- <code> rabi_freq </code>, the amplitude of the kicks
 # 	- <code> kick_building_blocks </code>, the elementary building blocks of the drive, for instance
@@ -77,6 +98,14 @@ hlp = Helper_funcs()
 # implemented functions
 # - <code>  evolve_periodic </code>
 # - <code>  evolve_periodic </code>
+=======
+# 	- nv_instance, an NV_system object
+# 	- rabi_freq, the amplitude of the kicks
+# 	- kick_building_blocks, the building blocks of the drive
+# 	- detuning=None, Detuning (left over single particle field in the rotating frame, Default None)
+# 	- AC_function=None, an AC field given as an arbitrary function, Default None
+# 	- noise=None, some noise to increase ergodicity, Default None
+>>>>>>> dac244c433243c7ca93805a76fcfd67867c6d362
 # 
 #
 #
