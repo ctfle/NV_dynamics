@@ -18,19 +18,12 @@ show docu:
 install:
 	pip install .
 
-update_github_master:
-	git add QNV4py
-	git add setup.py
-	git add examples
-	git commit -m "update of QNV4py and examples"
-	git checkout master
-	git push origin master
+update_github:
+	git add *
+	git commit QNV4py examples setup.py -m "update of QNV4py and examples"
+	git push origin master:master
 
-update_github_docu:
-	git add Makefile
-	git add docs
 	git add doxygen-awesome.css
-	git commit -m "update of QNV4py and examples"
-	git checkout docu
-	git push origin docu
-	git checkout master
+	git commit doxygen-awesome.css Makefile docs -m "updates on documentation"
+	git push origin docu:docu
+
