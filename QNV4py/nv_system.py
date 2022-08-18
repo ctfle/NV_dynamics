@@ -18,7 +18,7 @@ hlp = Helper_funcs()
 
 
 
-## @mainpage Quantum Dynamics in dipolar coupled nuclear spins
+## @mainpage Quantum Dynamics of Dipolar Coupled Nuclear Spins
 #  
 #  @brief Python package for (periodically) driven dipolar coupled \f$ C^{13} \f$ nuclear spins. 
 #  The package includes the class NV_system to create and design a system of dipolar coupled \f$ C^{13} \f$ spins
@@ -30,14 +30,9 @@ hlp = Helper_funcs()
 # - make it work on windows
 # 
 # @subsection intsall Installation via pip
-# Open a terminal window and navigate into the folder QNV4py. Type
+# Download the master branch from github/ctfle/NV_dynamics and un-zip. Open a terminal window and navigate into the folder QNV4py. Type
 #  ~~~~~~~~~~~~~{.py} 
 #  pip install . 
-#  ~~~~~~~~~~~~~
-#
-# Alternatively: Open a terminal window, navigate into the folder QNV4py. Type
-#  ~~~~~~~~~~~~~{.py} 
-#  make install
 #  ~~~~~~~~~~~~~
 #
 # To open the documentation file from the terminal: Open a terminal window and navigate to the folder QNV4py. Type
@@ -53,19 +48,35 @@ hlp = Helper_funcs()
 # 
 # @subsection notes_examples How to use the code:
 # 
-# Check out the example files under 'Related Pages' (sidebar)!
+# Check out the example files (see sidebar)!
 # 
 # The code consists of two classes: NV_system, to construct a random graph of \f$ C^{13} \f$ atoms, 
 # and NV_dynamics to evolve in time with user defined sequence. To setup a working code, first you have to 
 # construct a NV_system object. Then, use it to build a NV_dynamics object. NV_system can be used with default parameter settings
 # (for example  <code> C13_object = NV_system.default(L) </code>), which builds the random graph with
 # default settings. An NV_dynamics object requires the following input: 
-# 	- nv_instance, an NV_system object
-# 	- rabi_freq, the amplitude of the kicks
-# 	- kick_building_blocks, the building blocks of the drive
-# 	- detuning=None, Detuning (left over single particle field in the rotating frame, Default None)
-# 	- AC_function=None, an AC field given as an arbitrary function, Default None
-# 	- noise=None, some noise to increase ergodicity, Default None
+# 	- <code> nv_instance </code>, a NV_system object
+# 	- <code> rabi_freq </code>, the amplitude of the kicks
+# 	- <code> kick_building_blocks </code>, the elementary building blocks of the drive, for instance
+# 	- <code> detuning=None </code>, Detuning (left over single particle field in the rotating frame, Default None)
+# 	- <code> AC_function=None </code>, a (continous) AC field given as an arbitrary function, Default None
+# 	- <code> noise=None </code>, some noise to increase ergodicity, Default None
+# 
+# <code> kick_building_blocks </code> as well as AC_function have to be provided in a special list format: <code>  [block1, block2, ...] </code>, 
+# where each block is a list itself. For instance  <code> block1 = [[('dd',0.2),('x',0.1)],50] </code>. 
+# 	 <code> block2 = [[('z',1.0)],1] </code>. The first elememt of this list is a list of tuples defining the sequence. 
+# 	 In the example, <code> block1 </code> describes a sequence where the dipolar Hamiltonian (indicated by <code> 'dd' </code> ) 
+# 	 is applied for a time of 0.2 (in units of the internally estimated inverse energy scale of the system) followed by a kick <code> 'x' </code> amplitude
+# 	 <code> rabi_freq </code> and time 0.1. This protocol is repeated 50 times.
+# 	 
+# <code> AC_function </code> has to be provided as a list containing a defined function that returns a single value and some additional input parameters.
+# For isntance, to feed in the function <code> func(x,param1,param2) </code>, we set <code> AC_function = [func,param1,param2] </code>.
+# 
+# 
+# After initializing the a NV_dynamics object, you can evolve a given initial state in time using either of (so far)
+# implemented functions
+# - <code>  evolve_periodic </code>
+# - <code>  evolve_periodic </code>
 # 
 #
 #
