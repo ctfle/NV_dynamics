@@ -23,6 +23,7 @@ github_update_master:
 	git add setup.py
 	git add examples
 	git commit -m "update of QNV4py and examples"
+	git checkout master
 	git push origin master
 
 github_update_docu:
@@ -32,3 +33,4 @@ github_update_docu:
 	git commit -m "update of QNV4py and examples"
 	git checkout docu
 	git push origin docu
+	git checkout master
