@@ -1,0 +1,26 @@
+var _d_t_c__example_012_8py =
+[
+    [ "func", "_d_t_c__example_012_8py.html#a26480d31f51fb5869e9f1be7467a2605", null ],
+    [ "AC_function", "_d_t_c__example_012_8py.html#ae7dc00425ea93f9c64ef699167a1685a", null ],
+    [ "B_field_dir", "_d_t_c__example_012_8py.html#a21fd7c38a55cdbc74a9174528c9e61cc", null ],
+    [ "c13_dynamics", "_d_t_c__example_012_8py.html#a10a7e03089328ebca12aa27de6301057", null ],
+    [ "c13_spins", "_d_t_c__example_012_8py.html#a554fb11bf114682df2667d0016d50b88", null ],
+    [ "description", "_d_t_c__example_012_8py.html#a08fa66b82186b74be88f4b7cfe6e609f", null ],
+    [ "detuning", "_d_t_c__example_012_8py.html#a7b744a4cbbb67d35c42e756979223d2c", null ],
+    [ "extra_save_parameters", "_d_t_c__example_012_8py.html#a72a4898ec8c1b6f878d195f47d0fd406", null ],
+    [ "folder", "_d_t_c__example_012_8py.html#a0379b41a7ff2fda8a48b1a2c632403d4", null ],
+    [ "kick_building_blocks", "_d_t_c__example_012_8py.html#af825b6c9ab5a647069a8831f1fbc9594", null ],
+    [ "L", "_d_t_c__example_012_8py.html#ac07d9c8721a66d1e5e54f663b35ce28d", null ],
+    [ "max_r", "_d_t_c__example_012_8py.html#a7c8092f47b46dd647a18d5d9dafbdff9", null ],
+    [ "min_r", "_d_t_c__example_012_8py.html#a8c916aef1b573cdeee1f529989d3812f", null ],
+    [ "n1", "_d_t_c__example_012_8py.html#a8092dca9502d9e6c8f1dda2f1ecd5901", null ],
+    [ "n2", "_d_t_c__example_012_8py.html#a65dc4c93833ac2490359652eb968aa4b", null ],
+    [ "noise", "_d_t_c__example_012_8py.html#a5db102f1a68b28b146a312c6d3474b33", null ],
+    [ "observables", "_d_t_c__example_012_8py.html#a9782db750c80abe017bdf3ba2989d165", null ],
+    [ "psi_i", "_d_t_c__example_012_8py.html#ad0537c7ee365feb6876db00fb1a0acef", null ],
+    [ "rabi_freq", "_d_t_c__example_012_8py.html#a67e76167f1bec3b7900a8fdea98f338e", null ],
+    [ "save_every", "_d_t_c__example_012_8py.html#ac088ebf0396cfdfb7250591cceab6f96", null ],
+    [ "seed", "_d_t_c__example_012_8py.html#a532b20b5808c58dab8f6a5f1d738ab93", null ],
+    [ "steps", "_d_t_c__example_012_8py.html#a56861ee4106eb7f4d7f32beba7e73ecc", null ],
+    [ "times", "_d_t_c__example_012_8py.html#af201dde22abda6fbb55d7b6c29a941be", null ]
+];
