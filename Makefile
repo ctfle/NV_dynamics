@@ -13,12 +13,12 @@ documentation:
 	cd docs && rm -r html 
 
 show docu:
-	cd docs/html && open index.html
+	open https://ctfle.github.io/nv_dynamics/
 
 install:
 	pip install .
 
-github_update_master:
+update_github_master:
 	git add QNV4py
 	git add setup.py
 	git add examples
@@ -26,7 +26,7 @@ github_update_master:
 	git checkout master
 	git push origin master
 
-github_update_docu:
+update_github_docu:
 	git add Makefile
 	git add docs
 	git add doxygen-awesome.css

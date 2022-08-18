@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quantum Dynamics of Dipolar Coupled Nuclear Spins: Quantum Dynamics in dipolar coupled nuclear spins</title>
+<title>Quantum Dynamics of Dipolar Coupled Nuclear Spins: Quantum Dynamics of Dipolar Coupled Nuclear Spins</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,7 +83,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Quantum Dynamics in dipolar coupled nuclear spins </div></div>
+  <div class="headertitle"><div class="title">Quantum Dynamics of Dipolar Coupled Nuclear Spins </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >Python package for (periodically) driven dipolar coupled <img class="formulaInl" alt="$ C^{13} $" src="form_1.png" width="20" height="11"/> nuclear spins. The package includes the class <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a> to create and design a system of dipolar coupled <img class="formulaInl" alt="$ C^{13} $" src="form_1.png" width="20" height="11"/> spins centered around a central NV center, and the class NV_dynamics for the time evolution of pure initial states of <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a> objects.</p>
@@ -96,8 +96,7 @@ To be done</h2>
 </ul>
 <h2><a class="anchor" id="intsall"></a>
 Installation via pip</h2>
-<p >Open a terminal window and navigate into the folder <a class="el" href="namespace_q_n_v4py.html">QNV4py</a>. Type </p><div class="fragment"><div class="line">pip install . </div>
-</div><!-- fragment --><p >Alternatively: Open a terminal window, navigate into the folder <a class="el" href="namespace_q_n_v4py.html">QNV4py</a>. Type </p><div class="fragment"><div class="line">make install</div>
+<p >Download the master branch from github/ctfle/NV_dynamics and un-zip. Open a terminal window and navigate into the folder <a class="el" href="namespace_q_n_v4py.html">QNV4py</a>. Type </p><div class="fragment"><div class="line">pip install . </div>
 </div><!-- fragment --><p >To open the documentation file from the terminal: Open a terminal window and navigate to the folder <a class="el" href="namespace_q_n_v4py.html">QNV4py</a>. Type </p><div class="fragment"><div class="line">make show docu</div>
 </div><!-- fragment --><h2><a class="anchor" id="notes_packages"></a>
 Required packages</h2>
@@ -108,14 +107,20 @@ Required packages</h2>
 </ul>
 <h2><a class="anchor" id="notes_examples"></a>
 How to use the code:</h2>
-<p >Check out the example files under 'Related Pages' (sidebar)!</p>
+<p >Check out the example files (see sidebar)!</p>
 <p >The code consists of two classes: <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a>, to construct a random graph of <img class="formulaInl" alt="$ C^{13} $" src="form_1.png" width="20" height="11"/> atoms, and NV_dynamics to evolve in time with user defined sequence. To setup a working code, first you have to construct a <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a> object. Then, use it to build a NV_dynamics object. <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a> can be used with default parameter settings (for example <code> C13_object = NV_system.default(L) </code>), which builds the random graph with default settings. An NV_dynamics object requires the following input:</p><ul>
-<li>nv_instance, an <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a> object</li>
-<li>rabi_freq, the amplitude of the kicks</li>
-<li>kick_building_blocks, the building blocks of the drive</li>
-<li>detuning=None, Detuning (left over single particle field in the rotating frame, Default None)</li>
-<li>AC_function=None, an AC field given as an arbitrary function, Default None</li>
-<li>noise=None, some noise to increase ergodicity, Default None </li>
+<li><code> nv_instance </code>, a <a class="el" href="class_q_n_v4py_1_1nv__system_1_1_n_v__system.html" title="Sets up a random graph of L spins where each spin has a min_dist to all other spins and is at least c...">NV_system</a> object</li>
+<li><code> rabi_freq </code>, the amplitude of the kicks</li>
+<li><code> kick_building_blocks </code>, the elementary building blocks of the drive, for instance</li>
+<li><code> detuning=None </code>, Detuning (left over single particle field in the rotating frame, Default None)</li>
+<li><code> AC_function=None </code>, a (continous) AC field given as an arbitrary function, Default None</li>
+<li><code> noise=None </code>, some noise to increase ergodicity, Default None</li>
+</ul>
+<p ><code> kick_building_blocks </code> as well as AC_function have to be provided in a special list format: <code> [block1, block2, ...] </code>, where each block is a list itself. For instance <code> block1 = [[('dd',0.2),('x',0.1)],50] </code>. <code> block2 = [[('z',1.0)],1] </code>. The first elememt of this list is a list of tuples defining the sequence. In the example, <code> block1 </code> describes a sequence where the dipolar Hamiltonian (indicated by <code> 'dd' </code> ) is applied for a time of 0.2 (in units of the internally estimated inverse energy scale of the system) followed by a kick <code> 'x' </code> amplitude <code> rabi_freq </code> and time 0.1. This protocol is repeated 50 times.</p>
+<p ><code> AC_function </code> has to be provided as a list containing a defined function that returns a single value and some additional input parameters. For isntance, to feed in the function <code> func(x,param1,param2) </code>, we set <code> AC_function = [func,param1,param2] </code>.</p>
+<p >After initializing the a NV_dynamics object, you can evolve a given initial state in time using either of (so far) implemented functions</p><ul>
+<li><code> evolve_periodic </code></li>
+<li><code> evolve_periodic </code> </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

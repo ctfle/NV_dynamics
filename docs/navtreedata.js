@@ -25,8 +25,14 @@
 var NAVTREE =
 [
   [ "Quantum Dynamics of Dipolar Coupled Nuclear Spins", "index.html", [
-    [ "Quantum Dynamics in dipolar coupled nuclear spins", "index.html", null ],
-    [ "Example code for a DTC", "_d_t_c_example.html", null ],
+    [ "Example code for a DTC", "_d_t_c_example.html", [
+      [ "To be done", "index.html#notes_main", null ],
+      [ "Installation via pip", "index.html#intsall", null ],
+      [ "Required packages", "index.html#notes_packages", null ],
+      [ "How to use the code:", "index.html#notes_examples", [
+        [ "Prototype example code for a DTC", "_d_t_c_example.html#example2", null ]
+      ] ]
+    ] ],
     [ "Basic example for QNV4py", "examples_page.html", null ],
     [ "Load HDF5 files", "example_load.html", null ],
     [ "Example code for a random drive", "random_example.html", null ],
@@ -59,7 +65,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"namespace_q_n_v4py_1_1helper__funcs.html#aaa9ae32c5a5c9b8888cd428740f6d4e9"
+"namespace_d_t_c__example.html#ad4b98981548f1b9716ae1749b1b23fba"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
