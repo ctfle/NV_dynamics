@@ -75,7 +75,7 @@ hlp = Helper_funcs()
 # 
 # After initializing the a NV_dynamics object, you can evolve a given initial state in time using either of (so far)
 # implemented functions
-# - <code>  evolve_periodic </code>
+# - <code>  evolve_periodic </code> this is a test
 # - <code>  evolve_periodic </code>
 #
 #
