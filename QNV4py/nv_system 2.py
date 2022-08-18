@@ -30,7 +30,7 @@ hlp = Helper_funcs()
 # - make it work on windows
 # 
 # @subsection intsall Installation via pip
-# Download the master branch from https://github.com/ctfle/NV_dynamics and un-zip. Open a terminal window and navigate into the folder QNV4py. Type
+# Download the master branch from github/ctfle/NV_dynamics and un-zip. Open a terminal window and navigate into the folder QNV4py. Type
 #  ~~~~~~~~~~~~~{.py} 
 #  pip install . 
 #  ~~~~~~~~~~~~~
