@@ -91,6 +91,14 @@ hlp = Helper_funcs()
 # 			The latter input attributes no time dependence to the first block in <code> kick_building_blocks </code> but adds some time dependence given by a the function <code> func(n,some_param) </code> 
 # 			where the function input n specifies the evolution time step. (see Example code for a time dependent drive)
 #
+# Any of the above functions evaluates the given observables whenever only the dipolar Hamiltonian is applied.
+# The results (measurement times and observable values) are stored in HDF5 data format in a file <code> save_dir + file_name </code>. 
+# HDF5 stand fo hirachical data format and allows internal directory structures. 
+# Therefore, several datasets can be stored in the same file by specifying <code> folder </code> which creates folder within the HDF5 file.
+# Note that the applied save function automatically takes care of duplicate folder names and avoids overwriting. 
+# 
+# Another nice feature of HDF5 files is that one can attach metadata to datasets, hence there is no need to specify all parameters in the file-/folder-name 
+#
 #
 # @file nv_system.py Contains the class NV_system
 # 
