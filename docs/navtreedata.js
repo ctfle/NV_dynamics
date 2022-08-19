@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Quantum Dynamics of Dipolar Coupled Nuclear Spins", "index.html", [
-    [ "Quantum Dynamics in dipolar coupled nuclear spins", "index.html", null ],
+    [ "Quantum Dynamics in Dipolar Coupled Nuclear Spins", "index.html", null ],
     [ "Example code for a DTC", "_d_t_c_example.html", null ],
     [ "Basic example for QNV4py", "examples_page.html", null ],
     [ "Load HDF5 files", "example_load.html", null ],
